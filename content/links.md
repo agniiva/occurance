@@ -8,5 +8,5 @@ Some you might know, others might be new. They're the videos, podcasts, and repo
 
 Who knows? It might just change your perspective, as it did mine.
 
-- [https://open.spotify.com/show/0oXQacWACc5lVBWWJYQO8Z] (Cero 2) A scientific existential therapy. Hosted by Varun Mayya.
+- [Cero 2] (https://open.spotify.com/show/0oXQacWACc5lVBWWJYQO8Z) A scientific existential therapy. Hosted by Varun Mayya.
 
