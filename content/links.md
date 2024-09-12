@@ -10,5 +10,5 @@ Who knows? It might just change your perspective, as it did mine.
 
 [*Insert your curated list of links here*]
 
-- [https://open.spotify.com/show/0oXQacWACc5lVBWWJYQO8Z](Cero 2) A scientific existential therapy. Hosted by Varun Mayya.
+- [https://open.spotify.com/show/0oXQacWACc5lVBWWJYQO8Z] (Cero 2) A scientific existential therapy. Hosted by Varun Mayya.
 
