@@ -31,7 +31,6 @@ From the porch, Emily Mercer watched the duo, her heart swelling with both pride
 
 As they walked toward the house, Alex glanced back at the sky, a flicker of uncertainty crossing his features. The stars seemed to shimmer more brightly, as if bidding him forward into the unknown.
 
----
 
 The sun rose reluctantly the next morning, casting a pale light over the space center. A flurry of activity buzzed around the launch pad where the spacecraft *Odyssey* stood poised like a sentinel awaiting its command.
 
@@ -77,7 +76,7 @@ The engines roared to life, a deep rumble that vibrated through his entire being
 
 "Here we go," he whispered, the stars beckoning him forward.
 
----
+
 
 Days blended into nights as Alex navigated the *Odyssey* through the silent expanse. The monotony of space was broken only by the hum of the ship's systems and the routine check-ins with Mission Control.
 
@@ -111,7 +110,7 @@ As the transmission ended, Alex felt a pang of loneliness. The vast emptiness ou
 
 He glanced at Mr. Fuzzy, giving the bear a gentle squeeze. "Well, it's just you and me, buddy."
 
----
+
 
 Weeks later, the *Odyssey* neared the coordinates of the anomaly. Instruments began to behave erratically—readings fluctuated, and subtle vibrations coursed through the ship.
 
@@ -161,7 +160,7 @@ The transmission ended as suddenly as it began. Alex stared at the console, a kn
 
 "That's not possible," he whispered.
 
----
+
 
 Over the next few days, the transmissions became more frequent and increasingly perplexing. He received a message from Emily, but she looked different—her hair shorter, lines of worry etched on her face.
 
@@ -215,7 +214,7 @@ She hesitated. "We don't know. But whatever you choose, know that I'm proud of y
 
 The transmission faded, leaving Alex alone with his thoughts.
 
----
+
 
 Alex sat in silence, the hum of the ship the only accompaniment to his turmoil. Memories flooded his mind—Lily's laughter, Emily's touch, the life he left behind.
 
@@ -233,7 +232,7 @@ He closed his eyes, envisioning Lily's future—a world where she could thrive, 
 
 Decision made, he began preparations to enter the anomaly.
 
----
+
 
 Alex recorded a final message, his voice steady despite the storm within.
 
@@ -265,7 +264,7 @@ He smiled, a single tear slipping down his cheek. "You're welcome."
 
 With a final burst of light, everything faded.
 
----
+
 
 Back on Earth, under a tapestry of stars, a much older Lily stood on the same patch of grass where she once stargazed with her father. The night was quiet, the air crisp with the scent of dew.
 
