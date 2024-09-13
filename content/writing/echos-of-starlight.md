@@ -7,10 +7,6 @@ tags:
 - Cosmos
 ---
 
-# Echoes of Starlight
-
----
-
 The night sky stretched endlessly above, a canvas of infinite darkness dotted with shimmering stars. Seven-year-old Lily Mercer stood barefoot on the cool grass of her backyard, her eyes wide with wonder as she traced constellations with a tiny finger.
 
 "Daddy, look! There's Orion!" she exclaimed, her voice a sweet melody in the stillness.
