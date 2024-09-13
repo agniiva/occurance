@@ -1,7 +1,7 @@
 ---
 title: "Echoes of Starlight"
 description: "In the grand expanse of the cosmos, it's the echoes we leave behind that light the way for others."
-date: "2024-09-12"
+date: "2024-14-09"
 tags:
 - Sci-fi
 - Cosmos
