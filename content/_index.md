@@ -1,11 +1,11 @@
 ---
-title: Agniva Mahata Blogs
+title: Agniva Mahata
 ---
 
-Hi Agniva Mahata here.
+Hi, I’m Agniva Mahata.
 
-I'm an explorer & life-long learner of tech and human interaction. I've spent 5+ years in Tech & Startups, worked with a bunch of places from startups to established organisation & NGOs, at present I run:
-- [CashCowLabs](https://cashcowlabs.io), a organic Growth agency for Saas.
-- [Ganjes](https://www.ganjes.net/), a Venture Capital firm.
+I’m passionate about technology, human interaction, and storytelling. With over five years in tech and startups, I’ve had the privilege of working with a variety of organizations, from innovative startups to established companies and NGOs. Currently, I lead [CashCowLabs](https://cashcowlabs.io), an organic growth agency for SaaS, and [Ganjes](https://www.ganjes.net/), a venture capital firm.
 
-My journey spans AI/ML, business, and innovation. I build bold ideas, chasing the impossible :D
+Alongside my work in AI, ML, and business innovation, I nurture a love for writing stories as I continue to learn and explore new ideas. My journey is all about building meaningful connections and chasing bold, creative visions.
+
+Happy reading.
