@@ -20,7 +20,7 @@ Okay, so to understand **how to get rich**, we need to grasp the concepts of **V
 
 At its core, making money is about providing value. The more value you offer to others, the more wealth you can accumulate. But here's the thing—not all value is equal.
 
-When I first started, I thought working hard was the key. I took on multiple jobs, hustled day and night. But no matter how hard I worked, my income had a ceiling. I was trading time for money, and there's only so many hours in a day.
+When I first started, I thought working hard was the key. I took on jobs, hustled day and night doing freelancing. But no matter how hard I worked, my income had a ceiling or I was too tired even to use them. I was trading time for money, and there's only so many hours in a day.
 
 That's when it hit me: to break through that ceiling, I needed leverage.
 
