@@ -1,6 +1,6 @@
 ---
 title: "How to Be Rich in Your 20s: A Practitioner's Guide"
-description: ""
+description: "Understanding Value & Leverage"
 date: "2024-09-17"
 tags:
 - money
