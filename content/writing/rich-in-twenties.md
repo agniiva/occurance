@@ -11,7 +11,7 @@ I never asked my parents for money after I turned 18. I started making my own ca
 
 Why? Because I understood a career "secret" that I'm about to share with you. I believe every self-made person knows this well.
 
-This is going to be a long read, so if you're not patient enough to understand or implement what's written, you're not gonna make it.
+This is going to be a fairly deep read, so if you're not patient enough to understand or implement what's written, you're not gonna make it.
 
 Okay, so to understand **how to get rich**, we need to grasp the concepts of **Value** and **Leverage**.
 
