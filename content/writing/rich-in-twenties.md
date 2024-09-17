@@ -1,6 +1,6 @@
 ---
-title: "How to Be Rich in Your 20s: A Practitioner's Guide"
-description: "Understanding Value & Leverage"
+title: "How to Get Rich in Your 20s: Understanding Value & Leverage"
+description: "Understanding Value & Leverage can give you a serious advantage."
 date: "2024-09-17"
 tags:
 - money
