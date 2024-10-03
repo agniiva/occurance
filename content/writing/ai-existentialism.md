@@ -1,7 +1,7 @@
 ---
 title: "An AI's Existentalism"
 description: "Collective human history & AI's existential Quest"
-date: "2024-09-17"
+date: "2024-10-02"
 tags:
 - existentialism
 - philosophy
