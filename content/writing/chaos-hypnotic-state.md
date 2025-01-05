@@ -3,8 +3,9 @@ title: "Mind Blown: Why Am I So Obsessed with... Chaos?"
 description: "A personal exploration of our attraction to chaotic systems, pondering the nature of change, perception, and the surprising order hidden within apparent randomness."
 date: "2024-10-02"
 tags:
-- existentialism
+- physics
 - philosophy
+- psychedelics
 ---
 
 Okay, let's get real for a second. Have you ever just… watched water flowing? Like, really watched it?  A river meandering along, or the ocean waves crashing on the shore?  Or maybe a campfire, the way the flames dance and flicker?  There's something about those things, right?  Something that just pulls you in, almost like you're in a trance.
