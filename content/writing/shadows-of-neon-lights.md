@@ -6,7 +6,7 @@ tags:
 - short story
 ---
 
-[Note this is a movie draft so if you're reading this pls don't, if you do :) ignore some shit written on it]
+[Note this is an AI short film draft so if you're reading this pls don't, if you do :) ignore some shit written on it]
 
 My name is Kaito, and if you'd asked me a year ago where I'd be today, I'd probably have shrugged, eyes glazed, lost somewhere between lines of code and the hypnotic pulse of Tokyo's neon nights. Ordinary—that’s the word that used to define me. Until one night, routine blurred into revelation, and everything shifted.
 
