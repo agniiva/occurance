@@ -1,7 +1,7 @@
 ---
 title: "SaaS 3.0: The End of Faster Horses"
 description: "From dashboards to digital employees—why software that *executes* is eating SaaS that *informs*."
-date: "2024-10-02"
+date: "2025-07-12"
 tags:
 - saas-3-0
 - ai-agents
