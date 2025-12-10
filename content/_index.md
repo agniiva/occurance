@@ -1,11 +1,27 @@
 ---
-title: Agniva Mahata
+title: I'm Agniva
 ---
 
-Hi, I’m Agniva Mahata.
+Hi, I'm Agniva Mahata.
 
-I’m passionate about technology, human interaction, and storytelling. With over five years in tech and startups, I’ve had the privilege of working with a variety of organizations, from innovative startups to established companies and NGOs. Currently, I lead [CashCowLabs](https://cashcowlabs.io), an organic growth agency for SaaS, and [Ganjes](https://www.ganjes.net/), a venture capital firm.
+I build the business side of creator companies. Distribution, offers, operations. Someone has the audience and expertise, I build the system that turns it into revenue.
 
-Alongside my work in AI, ML, and business innovation, I nurture a love for writing stories as I continue to learn and explore new ideas. My journey is all about building meaningful connections and chasing bold, creative visions.
+**Now**
 
-Happy reading.
+[BenAI](https://benai.co) (with [Ben van Sprundel](https://www.youtube.com/@BenvanSprundel)): CTO and partner. Multi-million dollar company, bootstrapped. 100K+ YouTube subscribers, 1000+ paying members, courses, templates. Everything that isn't Ben on camera is my work.
+
+[Boring Marketing](https://boringmarketing.com) (with [Greg Isenberg](https://www.youtube.com/@GregIsenberg)): Founding team. Helped operationalize the company from zero to $120K MRR in seven months.
+
+[Cash Cow Labs](https://cashcowlabs.io): Same playbook with other creators in tech and AI.
+
+**Before this**
+
+Built and sold products, ran R&D teams, did a stint in venture capital, consulted for GIZ on African SMEs, built a COVID resource platform during the Kolkata wave that actually got used. Started early, broke a lot of things, learned what works.
+
+---
+
+I'm not an agency or a consultant. I'm the operator who builds the monetization layer and stays in it.
+
+Outside of work: consciousness research, psychedelics, psytrance, whatever rabbit hole I'm currently in.
+
+24, no fixed address, usually somewhere in Asia.
