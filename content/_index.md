@@ -25,5 +25,3 @@ I'm not an agency or a consultant. I'm the operator who builds the monetization 
 Outside of work: produce music, consciousness research, raves, whatever rabbit hole I'm currently in.
 
 24, no fixed address, usually somewhere in Asia.
-
-[In India now]
