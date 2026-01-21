@@ -8,7 +8,7 @@ I build the business side of creator companies. Distribution, offers, operations
 
 **Now**
 
-[BenAI](https://benai.co) (with [Ben van Sprundel](https://www.youtube.com/@BenvanSprundel)): CTO and partner. Multi-million dollar company, bootstrapped. 100K+ YouTube subscribers, 1000+ paying members, courses, templates. A part  that isn't Ben on camera is my work.
+[BenAI](https://benai.co) (with [Ben van Sprundel](https://www.youtube.com/@BenvanSprundel)): CTO and partner. Multi-million dollar company, bootstrapped. 100K+ YouTube subscribers, 1000+ paying members, courses, templates. A part that isn't Ben on camera is my work.
 
 [Boring Marketing](https://boringmarketing.com) (with [Greg Isenberg](https://www.youtube.com/@GregIsenberg)): Founding team. Helped operationalize the company from zero to $120K MRR in seven months.
 
