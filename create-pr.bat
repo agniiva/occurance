@@ -1,0 +1,3 @@
+@echo off
+cd /d C:\Users\Administrator\occurance-fix
+gh pr create --title "fix: resolve Hugo build errors for Netlify deployment" --body "Fixes the Hugo build failing on Netlify. Changes: replaced deprecated paginate with pagination.pagerSize (removed in Hugo v0.128+), fixed disableKinds to use taxonomy/term instead of categories/tags, removed deprecated keys (preserveTaxonomyNames, pygmentsCodeFences, pygmentsUseClasses, footnotereturnlinkcontents), replaced deprecated minify:true with minify.minifyOutput, removed junk file content/saas-3o, added .gitignore, removed 8 committed .DS_Store files. Tested: clean Hugo build with 0 warnings, 0 errors, 15 pages." --base main --head fix/hugo-build-errors

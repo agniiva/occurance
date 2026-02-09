@@ -1,11 +1,15 @@
 ---
 title: Links
+description: "Ideas, resources, and rabbit holes that shaped my thinking."
 ---
 
-I've always been drawn to ideas that challenge my thinking. This page is my digital antilibrary - a collection of links that have shaped who I am and how I see the world.
+A collection of ideas that have shaped how I think. Videos, podcasts, and reads I find myself revisiting.
 
-Some you might know, others might be new. They're the videos, podcasts, and reports I find myself revisiting time and again. I'm no expert, just a curious explorer sharing what's caught my attention. Dive in, pick something intriguing, and let it spark your imagination.
+**AI & Technology**
+- [Cero 2 ↗](https://open.spotify.com/show/0oXQacWACc5lVBWWJYQO8Z) — Existential therapy by Varun Mayya
 
-Who knows? It might just change your perspective, as it did mine.
+**Consciousness & Philosophy**
+*(Coming soon)*
 
-- [Cero 2 ↗](https://open.spotify.com/show/0oXQacWACc5lVBWWJYQO8Z) Existential therapy by Varun Mayya.
+**Business & Building**
+*(Coming soon)*
