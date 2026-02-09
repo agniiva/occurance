@@ -3,8 +3,281 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
+  <title>Content Manager — Agniva</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <style>
+    /* ── Base ── */
+    :root {
+      --bg: #0e0e10;
+      --surface: #18181b;
+      --surface-hover: #1e1e22;
+      --border: #27272a;
+      --text: #fafafa;
+      --text-muted: #a1a1aa;
+      --accent: #e4e4e7;
+      --accent-bright: #ffffff;
+      --blue: #60a5fa;
+      --blue-dim: #2563eb;
+      --green: #4ade80;
+      --radius: 10px;
+      --font: 'Inter var', 'Inter', -apple-system, system-ui, sans-serif;
+    }
+
+    /* ── Global overrides ── */
+    body {
+      font-family: var(--font) !important;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: -0.02em;
+    }
+
+    /* ── Top bar ── */
+    header, [class*="AppHeader"] {
+      font-family: var(--font) !important;
+    }
+
+    /* ── Dark background ── */
+    [id="nc-root"] {
+      background: var(--bg) !important;
+      min-height: 100vh;
+    }
+
+    /* Top nav bar */
+    [class*="AppHeader"] {
+      background: var(--surface) !important;
+      border-bottom: 1px solid var(--border) !important;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3) !important;
+    }
+    [class*="AppHeader"] a,
+    [class*="AppHeader"] span,
+    [class*="AppHeader"] button {
+      color: var(--text-muted) !important;
+      font-weight: 450 !important;
+      letter-spacing: -0.01em !important;
+    }
+    [class*="AppHeader"] a:hover,
+    [class*="AppHeader"] button:hover {
+      color: var(--text) !important;
+    }
+
+    /* ── Sidebar / Collections ── */
+    [class*="Sidebar"],
+    [class*="CollectionPane"],
+    aside {
+      background: var(--surface) !important;
+      border-right: 1px solid var(--border) !important;
+    }
+    [class*="Sidebar"] h2,
+    [class*="Sidebar"] span,
+    [class*="Sidebar"] a,
+    [class*="CollectionPane"] h2,
+    [class*="CollectionPane"] span {
+      color: var(--text-muted) !important;
+      font-weight: 450 !important;
+    }
+    [class*="SidebarNavLink"][class*="active"],
+    [class*="Sidebar"] a[class*="active"] {
+      color: var(--text) !important;
+      border-left-color: var(--blue) !important;
+      background: rgba(96, 165, 250, 0.06) !important;
+    }
+
+    /* ── Main content area ── */
+    main, [class*="Main"],
+    [class*="EntryListing"],
+    [class*="CollectionContainer"],
+    [class*="SearchContainer"] {
+      background: var(--bg) !important;
+    }
+
+    /* Collection heading */
+    [class*="CollectionTop"] {
+      background: var(--bg) !important;
+    }
+    [class*="CollectionTop"] h1,
+    [class*="CollectionTop"] h2 {
+      color: var(--text) !important;
+      font-weight: 600 !important;
+      letter-spacing: -0.03em !important;
+    }
+
+    /* ── Entry list cards ── */
+    [class*="ListCard"],
+    [class*="EntryCard"],
+    [class*="ListCardLink"] {
+      background: var(--surface) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: var(--radius) !important;
+      margin-bottom: 6px !important;
+      transition: all 0.15s ease !important;
+    }
+    [class*="ListCard"]:hover,
+    [class*="EntryCard"]:hover,
+    [class*="ListCardLink"]:hover {
+      background: var(--surface-hover) !important;
+      border-color: #3f3f46 !important;
+      transform: translateY(-1px) !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+    }
+    [class*="ListCard"] h2,
+    [class*="ListCard"] a,
+    [class*="ListCard"] span,
+    [class*="ListCardLink"] h2,
+    [class*="ListCardLink"] a {
+      color: var(--text) !important;
+      font-weight: 450 !important;
+    }
+
+    /* ── Buttons ── */
+    [class*="ToolbarButton"],
+    button[class*="Button"] {
+      font-family: var(--font) !important;
+      border-radius: 8px !important;
+      font-weight: 500 !important;
+      letter-spacing: -0.01em !important;
+      transition: all 0.15s ease !important;
+    }
+
+    /* Primary / CTA buttons (New Writing etc) */
+    [class*="ToolbarButton"][class*="green"],
+    a[href*="new"],
+    button[class*="create"],
+    [class*="ToolbarButton"]:not([class*="Dropdown"]) {
+      background: var(--text) !important;
+      color: var(--bg) !important;
+      border: none !important;
+      border-radius: 8px !important;
+    }
+    [class*="ToolbarButton"]:hover {
+      opacity: 0.85 !important;
+    }
+
+    /* ── Search input ── */
+    input[type="text"],
+    input[type="search"],
+    [class*="SearchInput"] {
+      background: var(--surface) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 8px !important;
+      color: var(--text) !important;
+      font-family: var(--font) !important;
+    }
+    input::placeholder {
+      color: var(--text-muted) !important;
+    }
+
+    /* ── Editor pane ── */
+    [class*="ControlPane"],
+    [class*="PreviewPane"],
+    [class*="EditorControl"],
+    [class*="EditorContainer"] {
+      background: var(--bg) !important;
+    }
+    [class*="ControlPane"] label,
+    [class*="EditorControl"] label {
+      color: var(--text-muted) !important;
+      font-weight: 500 !important;
+      text-transform: uppercase !important;
+      font-size: 0.7rem !important;
+      letter-spacing: 0.05em !important;
+    }
+    [class*="ControlPane"] input,
+    [class*="ControlPane"] textarea,
+    [class*="EditorControl"] input,
+    [class*="EditorControl"] textarea {
+      background: var(--surface) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 8px !important;
+      color: var(--text) !important;
+      font-family: var(--font) !important;
+    }
+
+    /* Markdown editor */
+    [class*="MarkdownControl"],
+    [class*="RawEditor"],
+    .CodeMirror,
+    .cm-s-default {
+      background: var(--surface) !important;
+      color: var(--text) !important;
+      border-radius: var(--radius) !important;
+    }
+    .CodeMirror-gutters {
+      background: var(--surface) !important;
+      border-right: 1px solid var(--border) !important;
+    }
+    .CodeMirror-cursor {
+      border-left-color: var(--text) !important;
+    }
+    .CodeMirror-selected {
+      background: rgba(96, 165, 250, 0.15) !important;
+    }
+
+    /* ── Preview pane ── */
+    [class*="PreviewPaneFrame"],
+    [class*="PreviewPane"] iframe {
+      background: var(--bg) !important;
+    }
+
+    /* ── Sort / filter bar ── */
+    [class*="SortControl"],
+    [class*="ViewControl"] {
+      color: var(--text-muted) !important;
+    }
+
+    /* ── Dropdown menus ── */
+    [class*="Dropdown"] ul,
+    [class*="DropdownList"],
+    [role="menu"] {
+      background: var(--surface) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: var(--radius) !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4) !important;
+    }
+    [class*="Dropdown"] li,
+    [role="menuitem"] {
+      color: var(--text) !important;
+    }
+    [class*="Dropdown"] li:hover,
+    [role="menuitem"]:hover {
+      background: var(--surface-hover) !important;
+    }
+
+    /* ── Dialog / modals ── */
+    [class*="Dialog"],
+    [role="dialog"] {
+      background: var(--surface) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 12px !important;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+    }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+
+    /* ── General text color fixes ── */
+    h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
+      color: var(--text);
+    }
+
+    /* ── Netlify Identity widget dark mode ── */
+    .netlify-identity-menu,
+    .netlify-identity-button {
+      font-family: var(--font) !important;
+    }
+  </style>
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
