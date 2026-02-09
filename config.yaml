@@ -3,18 +3,19 @@ languageCode: en-us
 title: Agniva Mahata
 googleAnalytics: ""
 disqusShortname: ""
-preserveTaxonomyNames: true
-footnotereturnlinkcontents: ↩
 disableHugoGeneratorInject: true
 pluralizeListTitles: false
-pygmentsCodeFences: false
-pygmentsUseClasses: false
 enableRobotsTXT: false
-minify: true
-paginate: 9999
+minify:
+  minifyOutput: true
+
+pagination:
+  pagerSize: 9999
+
 disableKinds:
-  - categories
-  - tags
+  - taxonomy
+  - term
+
 taxonomies:
   tag: tags
 
@@ -26,12 +27,12 @@ params:
   subtitle: ""
 
 frontmatter:
-  author: 
-  github: 
-  facebook: 
-  og_image: 
-  sitename: 
-  twitter: 
+  author:
+  github:
+  facebook:
+  og_image:
+  sitename:
+  twitter:
 
 sitemap:
   changefreq: daily

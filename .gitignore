@@ -1,0 +1,8 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Hugo
+public/
+resources/
+.hugo_build.lock
