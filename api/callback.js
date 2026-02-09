@@ -35,13 +35,13 @@ export default async function handler(req, res) {
 <body>
 <script>
 (function() {
-  function sendMsg(msg) {
-    if (window.opener) {
-      window.opener.postMessage(msg, "*");
-      window.close();
-    }
+  var token = "${token}";
+  var provider = "${provider}";
+  var msg = "authorization:" + provider + ":success:" + JSON.stringify({token: token, provider: provider});
+  if (window.opener) {
+    window.opener.postMessage(msg, "*");
+    window.close();
   }
-  sendMsg("authorization:${provider}:success:${JSON.stringify({ token, provider })}");
 })();
 </script>
 </body>
