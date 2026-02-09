@@ -12,7 +12,7 @@ module.exports = async function handler(req, res) {
 
   if (!clientId || !clientSecret) {
     res.statusCode = 500;
-    res.end('Error: Missing env vars. clientId=' + (clientId ? 'set' : 'missing') + ' clientSecret=' + (clientSecret ? 'set' : 'missing'));
+    res.end('Missing env vars. clientId=' + (clientId ? 'set' : 'missing') + ' secret=' + (clientSecret ? 'set' : 'missing'));
     return;
   }
 
@@ -35,47 +35,44 @@ module.exports = async function handler(req, res) {
     var data;
     try {
       data = JSON.parse(rawBody);
-    } catch (parseErr) {
+    } catch (e) {
       res.statusCode = 500;
-      res.end('GitHub returned non-JSON (status ' + response.status + '): ' + rawBody.substring(0, 500));
+      res.end('GitHub non-JSON (HTTP ' + response.status + '): ' + rawBody.substring(0, 500));
       return;
     }
 
     if (data.error) {
       res.statusCode = 401;
-      res.end('Auth error: ' + (data.error_description || data.error));
+      res.end('GitHub error: ' + (data.error_description || data.error));
       return;
     }
 
     var token = data.access_token;
-
     if (!token) {
       res.statusCode = 500;
-      res.end('No access_token in response: ' + JSON.stringify(data));
+      res.end('No access_token. Full response: ' + JSON.stringify(data));
       return;
     }
 
-    var html = [
-      '<!doctype html><html><body><script>',
-      '(function() {',
-      '  var token = "' + token + '";',
-      '  var provider = "github";',
-      '  var payload = JSON.stringify({ token: token, provider: provider });',
-      '  var msg = "authorization:" + provider + ":success:" + payload;',
-      '  if (window.opener) {',
-      '    window.opener.postMessage(msg, "*");',
-      '    setTimeout(function() { window.close(); }, 500);',
-      '  } else {',
-      '    document.body.innerHTML = "<p>Auth successful! You can close this window.</p>";',
-      '  }',
-      '})();',
-      '</script></body></html>'
-    ].join('\n');
-
     res.setHeader('Content-Type', 'text/html');
-    res.end(html);
+    res.end(
+      '<html><body><script>\n' +
+      '(function() {\n' +
+      '  window.opener.postMessage(\n' +
+      '    "authorizing:github",\n' +
+      '    "*"\n' +
+      '  );\n' +
+      '  window.addEventListener("message", function(e) {\n' +
+      '    window.opener.postMessage(\n' +
+      '      \'authorization:github:success:{"token":"' + token + '","provider":"github"}\',\n' +
+      '      e.origin\n' +
+      '    );\n' +
+      '  });\n' +
+      '})();\n' +
+      '</script></body></html>'
+    );
   } catch (err) {
     res.statusCode = 500;
-    res.end('OAuth exchange error: ' + (err.message || String(err)));
+    res.end('Exchange error: ' + (err.message || String(err)));
   }
 };
