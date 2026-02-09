@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager — Agniva</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <style>
@@ -38,7 +37,7 @@
     }
 
     /* ── Dark background ── */
-    [id="nc-root"] {
+    [id="nc-root"], [id="sveltia-cms"] {
       background: var(--bg) !important;
       min-height: 100vh;
     }
@@ -139,7 +138,7 @@
       transition: all 0.15s ease !important;
     }
 
-    /* Primary / CTA buttons (New Writing etc) */
+    /* Primary / CTA buttons */
     [class*="ToolbarButton"][class*="green"],
     a[href*="new"],
     button[class*="create"],
@@ -271,15 +270,9 @@
     h1, h2, h3, h4, h5, h6, p, span, div, a, li, td, th {
       color: var(--text);
     }
-
-    /* ── Netlify Identity widget dark mode ── */
-    .netlify-identity-menu,
-    .netlify-identity-button {
-      font-family: var(--font) !important;
-    }
   </style>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
 </body>
 </html>

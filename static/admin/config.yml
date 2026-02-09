@@ -1,19 +1,58 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: agniiva/occurance
   branch: main
+  auth_type: pkce
+  app_id: occurance-cms
+
+site_url: https://agnivamahata.com
+display_url: https://agnivamahata.com
 
 media_folder: static/images
 public_folder: /images
 
 collections:
+  # ── Writing (blog posts / essays) ──
   - name: "writing"
     label: "Writing"
+    label_singular: "Post"
     folder: "content/writing"
     create: true
     slug: "{{slug}}"
+    sortable_fields: ["date", "title"]
+    summary: "{{title}} — {{date}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Description", name: "description", widget: "string", hint: "Short summary for SEO and previews" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: true, hint: "Comma-separated tags" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  # ── Pages (About, Links, Home) ──
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "About"
+        name: "about"
+        file: "content/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Links"
+        name: "links"
+        file: "content/links.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
