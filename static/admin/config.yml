@@ -3,7 +3,7 @@ backend:
   repo: agniiva/occurance
   branch: main
   auth_type: pkce
-  app_id: occurance-cms
+  app_id: Ov23liGIprDW3X14PsGW
 
 site_url: https://agnivamahata.com
 display_url: https://agnivamahata.com
