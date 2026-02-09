@@ -1,20 +1,16 @@
-baseurl: ''
+baseurl: 'https://agnivamahata.com'
 languageCode: en-us
 title: Agniva Mahata
 googleAnalytics: ""
 disqusShortname: ""
 disableHugoGeneratorInject: true
 pluralizeListTitles: false
-enableRobotsTXT: false
+enableRobotsTXT: true
 minify:
   minifyOutput: true
 
 pagination:
   pagerSize: 9999
-
-disableKinds:
-  - taxonomy
-  - term
 
 taxonomies:
   tag: tags
