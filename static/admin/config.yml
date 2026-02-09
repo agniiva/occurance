@@ -2,8 +2,8 @@ backend:
   name: github
   repo: agniiva/occurance
   branch: main
-  auth_type: pkce
-  app_id: Ov23liGIprDW3X14PsGW
+  base_url: https://www.agnivamahata.com
+  auth_endpoint: /api/auth
 
 site_url: https://www.agnivamahata.com
 display_url: https://www.agnivamahata.com
