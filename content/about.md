@@ -1,6 +1,6 @@
 ---
 title: About
-description: "Agniva Mahata — building the business side of creator companies."
+description: "Agniva Mahata â€” building the business side of creator companies."
 ---
 
 I build the business side of creator companies. Distribution, offers, operations. Someone has the audience and expertise, I build the system that turns it into revenue.

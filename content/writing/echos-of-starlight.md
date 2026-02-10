@@ -64,7 +64,7 @@ Emily squeezed his hand one last time. "We love you."
 
 "I love you both more than all the stars in the sky," he replied, his gaze lingering on them before he turned and walked toward the launch tower.
 
-As he ascended the steps, the weight of his decision settled upon him. The mission was critical—a chance to explore a newly detected anomaly that could revolutionize space travel. Yet, the cost of leaving his family gnawed at him.
+As he ascended the steps, the weight of his decision settled upon him. The mission was criticalâ€”a chance to explore a newly detected anomaly that could revolutionize space travel. Yet, the cost of leaving his family gnawed at him.
 
 Strapped into the cockpit, he glanced at the photo taped to the console: Emily and Lily, their smiles radiant under a summer sun. Mr. Fuzzy sat secured beside it.
 
@@ -84,7 +84,7 @@ Days blended into nights as Alex navigated the *Odyssey* through the silent expa
 
 "Roger that, *Odyssey*. You're making good time," came the reply.
 
-He floated through the cabin, the zero-gravity environment both liberating and disorienting. Personal mementos—Lily's crayon drawings, a small potted plant from Emily—drifted gently, tethered to surfaces with Velcro.
+He floated through the cabin, the zero-gravity environment both liberating and disorienting. Personal mementosâ€”Lily's crayon drawings, a small potted plant from Emilyâ€”drifted gently, tethered to surfaces with Velcro.
 
 One evening, as he reviewed navigation charts, an incoming transmission alert sounded. Surprised, he activated the console. Emily's face appeared, her smile lighting up the screen.
 
@@ -112,13 +112,13 @@ He glanced at Mr. Fuzzy, giving the bear a gentle squeeze. "Well, it's just you 
 
 
 
-Weeks later, the *Odyssey* neared the coordinates of the anomaly. Instruments began to behave erratically—readings fluctuated, and subtle vibrations coursed through the ship.
+Weeks later, the *Odyssey* neared the coordinates of the anomaly. Instruments began to behave erraticallyâ€”readings fluctuated, and subtle vibrations coursed through the ship.
 
 "Mission Control, I'm approaching the anomaly. Experiencing minor system glitches," he reported.
 
 Static crackled over the comms. "Copy that, *Odyssey*. Proceed with caution. Data link is unstable."
 
-The viewport revealed a sight unlike any other—a swirling vortex of iridescent light, pulsating with rhythmic energy. It was both mesmerizing and ominous.
+The viewport revealed a sight unlike any otherâ€”a swirling vortex of iridescent light, pulsating with rhythmic energy. It was both mesmerizing and ominous.
 
 "Wow," he breathed, captivated by the spectacle.
 
@@ -138,7 +138,7 @@ Then, just as abruptly as it began, everything stilled. The alarms ceased, and t
 
 "That was intense," he muttered.
 
-He checked the systems—everything appeared operational. Confused, he tried re-establishing communication.
+He checked the systemsâ€”everything appeared operational. Confused, he tried re-establishing communication.
 
 "Mission Control, this is *Odyssey*. Do you copy?"
 
@@ -162,7 +162,7 @@ The transmission ended as suddenly as it began. Alex stared at the console, a kn
 
 
 
-Over the next few days, the transmissions became more frequent and increasingly perplexing. He received a message from Emily, but she looked different—her hair shorter, lines of worry etched on her face.
+Over the next few days, the transmissions became more frequent and increasingly perplexing. He received a message from Emily, but she looked differentâ€”her hair shorter, lines of worry etched on her face.
 
 "Alex, if you get this, please come home. It's been so long. We need you."
 
@@ -186,7 +186,7 @@ She smiled softly. "It's me, Lily."
 
 Alex's mind raced. "I don't understand."
 
-She took a deep breath. "The anomaly you're investigating—it's a rift in spacetime. It's allowing us to communicate across different points in time."
+She took a deep breath. "The anomaly you're investigatingâ€”it's a rift in spacetime. It's allowing us to communicate across different points in time."
 
 He ran a hand through his hair, the weight of the revelation pressing upon him. "But how? Why?"
 
@@ -216,7 +216,7 @@ The transmission faded, leaving Alex alone with his thoughts.
 
 
 
-Alex sat in silence, the hum of the ship the only accompaniment to his turmoil. Memories flooded his mind—Lily's laughter, Emily's touch, the life he left behind.
+Alex sat in silence, the hum of the ship the only accompaniment to his turmoil. Memories flooded his mindâ€”Lily's laughter, Emily's touch, the life he left behind.
 
 He activated the ship's log.
 
@@ -228,7 +228,7 @@ He glanced at the photo on the console. "Emily, Lily... I'm faced with an imposs
 
 The weight of responsibility settled upon him. The potential to advance humanity, to unite time itself, was within his grasp. Yet, the cost was immeasurable.
 
-He closed his eyes, envisioning Lily's future—a world where she could thrive, where the boundaries of time no longer constrained them.
+He closed his eyes, envisioning Lily's futureâ€”a world where she could thrive, where the boundaries of time no longer constrained them.
 
 Decision made, he began preparations to enter the anomaly.
 
@@ -248,9 +248,9 @@ With the *Odyssey* set on a course into the heart of the anomaly, Alex gazed out
 
 "Here goes nothing," he murmured.
 
-As the ship entered the vortex, colors enveloped him—a kaleidoscope of light and energy. The fabric of reality seemed to bend and stretch. Time lost all meaning.
+As the ship entered the vortex, colors enveloped himâ€”a kaleidoscope of light and energy. The fabric of reality seemed to bend and stretch. Time lost all meaning.
 
-He felt a strange peace wash over him. The boundaries between past, present, and future dissolved. Images flickered before him—moments of his life replayed like fragments of a dream.
+He felt a strange peace wash over him. The boundaries between past, present, and future dissolved. Images flickered before himâ€”moments of his life replayed like fragments of a dream.
 
 Emily laughing as they danced in the kitchen.
 
@@ -276,7 +276,7 @@ Opening it, she found Mr. Fuzzy and the photo of their family, along with his fi
 
 As she looked up, a new star flared brightly in the sky, its light cutting through the darkness.
 
-A sense of connection filled her—a warmth that spread from her heart outward.
+A sense of connection filled herâ€”a warmth that spread from her heart outward.
 
 "Thank you," she said softly, a smile touching her lips.
 

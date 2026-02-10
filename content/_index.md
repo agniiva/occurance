@@ -1,6 +1,6 @@
 ---
 title: I'm Agniva
-description: "Agniva Mahata — operator, builder, CTO at BenAI. Writing about AI, consciousness, and everything in between."
+description: "Agniva Mahata â€” operator, builder, CTO at BenAI. Writing about AI, consciousness, and everything in between."
 ---
 
 Hi, I'm Agniva Mahata.
