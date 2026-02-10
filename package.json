@@ -7,6 +7,7 @@
     "@vercel/og": "^0.8.6",
     "base64-js": "^0.0.8",
     "camelize": "^1.0.1",
+    "canvas": "^3.2.1",
     "color-name": "^1.1.4",
     "css-background-parser": "^0.1.0",
     "css-box-shadow": "^1.0.0-3",
