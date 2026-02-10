@@ -1,7 +1,8 @@
 ---
-title: "Mind Blown: Why Am I So Obsessed with... Chaos?"
+title: "Sensitive to Small Moves"
 description: "Chaos isn't randomness. It's what happens in the space between who you were and who you're becoming."
 date: "2025-01-05"
+slug: "sensitive-to-small-moves"
 tags: [chaos, liminality, life]
 ---
 
