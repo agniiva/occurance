@@ -8,7 +8,7 @@
 {{ else }}
 
 
- 
+
 <ul class="list">
    {{ range (.Paginate ( where .Site.RegularPages "Section" "writing" ).ByDate.Reverse).Pages }}
       {{ if ne .Kind "section" }}

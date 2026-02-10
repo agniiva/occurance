@@ -18,7 +18,7 @@ Okay, so to understand **how to get rich**, we need to grasp the concepts of **V
 
 ### **Understanding Value**
 
-At its core, making money is about providing value. The more value you offer to others, the more wealth you can accumulate. But here's the thing—not all value is equal.
+At its core, making money is about providing value. The more value you offer to others, the more wealth you can accumulate. But here's the thingâ€”not all value is equal.
 
 When I first started, I thought working hard was the key. I took on jobs, hustled day and night doing freelancing. But no matter how hard I worked, my income had a ceiling or I was too tired even to use them. I was trading time for money, and there's only so many hours in a day.
 
@@ -38,23 +38,23 @@ But in today's rapidly changing world, there's another form of leverage reshapin
 Let's dive into each one.
 
 
-#### **1. Time – The Ultimate Leverage**
+#### **1. Time â€“ The Ultimate Leverage**
 
-Time is the most democratic resource—we all get the same 24 hours. But how you use that time makes all the difference.
+Time is the most democratic resourceâ€”we all get the same 24 hours. But how you use that time makes all the difference.
 
 In my early days, I wasted time on low-impact activities. It wasn't until I started prioritizing tasks that generated the most value that things changed. I began automating routines, delegating tasks, and focusing on activities that had the highest return on investment.
 
 **Tip:** Audit your daily activities. Cut out the fluff. Focus on what moves the needle.
 
-#### **2. Money – Making Money Work for You**
+#### **2. Money â€“ Making Money Work for You**
 
 Once you have some capital, money becomes a powerful leverage tool. It's easier to make money when you already have some.
 
 I remember the first time I invested a small sum into a stock. Watching that money grow without additional effort on my part was a game-changer. Investing wisely can amplify your wealth exponentially. But now that you're young spend it on experiance, because every single $ you spend on yourself will compound over the years.
 
-**Tip:** Don't just save money—invest it. Let your money generate more money.
+**Tip:** Don't just save moneyâ€”invest it. Let your money generate more money.
 
-#### **3. Skill – Your First Form of Leverage**
+#### **3. Skill â€“ Your First Form of Leverage**
 
 Skills are your gateway to providing value. The right skill set can set you apart and open doors you didn't know existed.
 
@@ -64,13 +64,13 @@ Most people running companies are in their 40s. It's not as easy for them to und
 
 **Tip:** Leverage AI and emerging tech. By staying ahead, you position yourself as invaluable in a world that's rapidly evolving.
 
-#### **4. Distribution – The New Age Leverage**
+#### **4. Distribution â€“ The New Age Leverage**
 
 In the past, distribution channels were controlled by gatekeepers. Today, the internet has leveled the playing field.
 
 I'm starting to share my knowledge online, building an audience, creating networks. This not only expanded my reach but also multiplied the impact of my efforts. You see, anything you create once will be there in the internet forever, so essentially creating more will give you edge over those who don't create anything.
 
-**Tip:** Utilize social media, youtube, blogs, podcasts—any platform that allows you to reach more people with less effort.
+**Tip:** Utilize social media, youtube, blogs, podcastsâ€”any platform that allows you to reach more people with less effort.
 
 
 ### **Invest in Experiences**
@@ -94,7 +94,7 @@ Navigating these leverages intelligently is what propels you toward wealth.
 
 ### **Closing Thoughts**
 
-But here's something I've come to realize: being "rich" isn't what you truly try to be. It's a label people mark you with. No one is inherently rich. After a while, I understood that it's pointless—we're all living in someone else's story. The more people believe in the story, the more real it gets.
+But here's something I've come to realize: being "rich" isn't what you truly try to be. It's a label people mark you with. No one is inherently rich. After a while, I understood that it's pointlessâ€”we're all living in someone else's story. The more people believe in the story, the more real it gets.
 
 Rich doesn't mean having millions of dollars. Rich means being able to experience something without constraint.
 
