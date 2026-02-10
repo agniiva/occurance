@@ -20,9 +20,10 @@ function seededRandom(seed) {
   };
 }
 
-function generateAttractorDots(seed, width, height) {
+function generateDots(seed, width, height) {
   const rng = seededRandom(seed);
 
+  // Clifford attractor
   const a = -2.0 + rng() * 1.5;
   const b = 0.5 + rng() * 1.5;
   const c = -1.5 + rng() * 1.0;
@@ -30,8 +31,7 @@ function generateAttractorDots(seed, width, height) {
 
   let x = 0.1;
   let y = 0.1;
-
-  const numPoints = 30000;
+  const numPoints = 20000;
   const xs = [];
   const ys = [];
 
@@ -56,18 +56,17 @@ function generateAttractorDots(seed, width, height) {
 
   const rangeX = maxX - minX || 1;
   const rangeY = maxY - minY || 1;
-  const pad = 50;
-  const drawW = width - pad * 2;
-  const drawH = height - pad * 2;
+  const pad = 40;
 
-  const gridSize = 5;
+  // Bin into grid
+  const gridSize = 8;
   const cols = Math.ceil(width / gridSize);
   const rows = Math.ceil(height / gridSize);
   const grid = new Uint16Array(cols * rows);
 
   for (let i = 0; i < xs.length; i++) {
-    const px = pad + ((xs[i] - minX) / rangeX) * drawW;
-    const py = pad + ((ys[i] - minY) / rangeY) * drawH;
+    const px = pad + ((xs[i] - minX) / rangeX) * (width - pad * 2);
+    const py = pad + ((ys[i] - minY) / rangeY) * (height - pad * 2);
     const col = Math.floor(px / gridSize);
     const row = Math.floor(py / gridSize);
     if (col >= 0 && col < cols && row >= 0 && row < rows) {
@@ -75,31 +74,36 @@ function generateAttractorDots(seed, width, height) {
     }
   }
 
-  let maxDensity = 0;
+  let maxD = 0;
   for (let i = 0; i < grid.length; i++) {
-    if (grid[i] > maxDensity) maxDensity = grid[i];
+    if (grid[i] > maxD) maxD = grid[i];
   }
-  if (maxDensity === 0) maxDensity = 1;
+  if (maxD === 0) maxD = 1;
+  const logMax = Math.log(maxD + 1);
 
-  const logMax = Math.log(maxDensity + 1);
-  const dots = [];
-
+  // Collect visible dots (limit to ~800 for Satori performance)
+  const allDots = [];
   for (let row = 0; row < rows; row++) {
     for (let col = 0; col < cols; col++) {
       const density = grid[row * cols + col];
       if (density > 0) {
         const logD = Math.log(density + 1) / logMax;
-        dots.push({
-          cx: col * gridSize + gridSize / 2,
-          cy: row * gridSize + gridSize / 2,
-          r: 1 + logD * 2,
-          opacity: 0.1 + logD * 0.85,
+        allDots.push({
+          x: col * gridSize,
+          y: row * gridSize,
+          size: Math.round(2 + logD * 5),
+          opacity: Math.round((0.15 + logD * 0.8) * 100) / 100,
         });
       }
     }
   }
 
-  return dots;
+  // If too many dots, sample them weighted by opacity
+  if (allDots.length > 800) {
+    allDots.sort((a, b) => b.opacity - a.opacity);
+    return allDots.slice(0, 800);
+  }
+  return allDots;
 }
 
 export default function handler(req) {
@@ -108,14 +112,7 @@ export default function handler(req) {
   const width = 1200;
   const height = 630;
   const seed = hashString(title);
-  const dots = generateAttractorDots(seed, width, height);
-
-  const svgCircles = dots.map(d =>
-    `<circle cx="${d.cx}" cy="${d.cy}" r="${d.r}" fill="rgba(255,255,255,${d.opacity.toFixed(3)})"/>`
-  ).join('');
-
-  const attractorSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"><g>${svgCircles}</g></svg>`;
-  const svgDataUrl = `data:image/svg+xml;base64,${btoa(attractorSvg)}`;
+  const dots = generateDots(seed, width, height);
 
   return new ImageResponse(
     (
@@ -128,45 +125,54 @@ export default function handler(req) {
           justifyContent: 'flex-end',
           backgroundColor: '#0a0a0a',
           position: 'relative',
+          overflow: 'hidden',
         }}
       >
-        <img
-          src={svgDataUrl}
-          width={width}
-          height={height}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-          }}
-        />
+        {/* Attractor dots rendered as divs */}
+        {dots.map((dot, i) => (
+          <div
+            key={i}
+            style={{
+              position: 'absolute',
+              left: dot.x,
+              top: dot.y,
+              width: dot.size,
+              height: dot.size,
+              borderRadius: '50%',
+              backgroundColor: `rgba(255,255,255,${dot.opacity})`,
+            }}
+          />
+        ))}
+
+        {/* Gradient overlay for text */}
         <div
           style={{
             position: 'absolute',
             bottom: 0,
             left: 0,
-            right: 0,
-            height: '250px',
-            background: 'linear-gradient(to bottom, transparent, rgba(10,10,10,0.85) 50%, rgba(10,10,10,0.98))',
+            width: '100%',
+            height: '260px',
+            background: 'linear-gradient(to bottom, transparent, rgba(10,10,10,0.9) 50%, #0a0a0a)',
             display: 'flex',
           }}
         />
+
+        {/* Title and site name */}
         <div
           style={{
             display: 'flex',
             flexDirection: 'column',
-            padding: '0 60px 40px',
+            padding: '0 60px 45px',
             position: 'relative',
-            zIndex: 1,
           }}
         >
           <div
             style={{
-              fontSize: 44,
+              fontSize: 48,
               fontWeight: 700,
               color: 'white',
-              lineHeight: 1.2,
-              marginBottom: 12,
+              lineHeight: 1.15,
+              marginBottom: 14,
               display: 'flex',
             }}
           >
@@ -174,8 +180,8 @@ export default function handler(req) {
           </div>
           <div
             style={{
-              fontSize: 18,
-              color: 'rgba(255,255,255,0.4)',
+              fontSize: 20,
+              color: 'rgba(255,255,255,0.35)',
               display: 'flex',
             }}
           >
