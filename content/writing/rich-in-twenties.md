@@ -1,105 +1,133 @@
 ---
 title: "How to Get Rich in Your 20s: Understanding Value & Leverage"
-description: "Understanding Value & Leverage can give you a serious advantage."
-date: "2024-09-17"
-tags:
-- money
-- personal-development
+description: "The window is open. Most people won't walk through it."
+date: 2024-09-17
+slug: "how-to-get-rich-in-your-20s"
+tags: ["leverage", "value", "ai", "wealth", "career"]
 ---
 
-I never asked my parents for money after I turned 18. I started making my own cash, spent like a spendthrift, went broke, started a company, and ended up with more money than I ever thought possible.
+I never asked my parents for money after I turned 18. I started making my own, spent it all, went broke, started something, went broke again, started something else. This happened more times than I want to admit.
 
-Why? Because I understood a career "secret" that I'm about to share with you. I believe every self-made person knows this well.
+I'm from Jhargram. A tier-3 village in West Bengal that most people in India haven't heard of. I failed to get into IIT. I spent years in Kolkata feeling like I was drowning in slow motion. I moved to Bangalore with no plan and no safety net. I built BenAI with Ben van Sprundel. I worked with Greg Isenberg on Boring Marketing. I started from zero so many times that zero started feeling like a familiar address.
 
-This is going to be a fairly deep read, so if you're not patient enough to understand or implement what's written, you're not gonna make it.
+But somewhere in that mess I figured out a thing. Not a trick, not a hack. A thing. The kind of thing that once you see it you can't unsee it, and once you can't unsee it you start making money in ways that feel almost unfair.
 
-Okay, so to understand **how to get rich**, we need to grasp the concepts of **Value** and **Leverage**.
+It comes down to two words: value and leverage. That's it. Everything else is decoration.
 
+---
 
-### **Understanding Value**
+Value is simple. Someone has a problem. You solve it. They pay you. The end.
 
-At its core, making money is about providing value. The more value you offer to others, the more wealth you can accumulate. But here's the thing—not all value is equal.
+But here's what nobody tells you: the size of the payment has almost nothing to do with how hard you work. I've worked 16-hour days and made nothing. I've spent two hours setting up a system for someone and made more than I did in three months of freelancing.
 
-When I first started, I thought working hard was the key. I took on jobs, hustled day and night doing freelancing. But no matter how hard I worked, my income had a ceiling or I was too tired even to use them. I was trading time for money, and there's only so many hours in a day.
+The difference wasn't effort. It was what I was solving and for whom.
 
-That's when it hit me: to break through that ceiling, I needed leverage.
+When I was freelancing in Kolkata, during those depression years where every day felt the same shade of grey, I was solving small problems for people who didn't have money. I was trading time for rupees. There's a ceiling on that and you hit it fast and it hurts when you hit it because you're already exhausted.
 
-### **The Power of Leverage**
+Then I started solving expensive problems for people who had money. Not harder problems. Not more complex problems. Just expensive ones. Everything changed.
 
-Leverage is like a force multiplier for your efforts. It's what allows you to achieve outsized results compared to the input you put in. There are four main types of leverage:
+A creator with 100K subscribers who doesn't know how to monetize? That's an expensive problem. A company bleeding money because their systems are manual? Expensive. These people will pay you real money because the cost of not solving it is higher than whatever you charge.
 
-1. **Time**
-2. **Money**
-3. **Skill**
-4. **Distribution**
+That's value. Not what you can do. What you can solve, and for whom.
 
-But in today's rapidly changing world, there's another form of leverage reshaping industries: **Technology**, especially **Artificial Intelligence (AI)**.
+---
 
-Let's dive into each one.
+Leverage is the multiplier. It's what separates the person making ₹50K a month working 80 hours from the person making ₹5L working 30.
 
+There are four kinds and they stack.
 
-#### **1. Time – The Ultimate Leverage**
+**Skill.** This is where everyone starts. You learn something. Code, design, sales, whatever. And you trade that skill for money. Fine. But skill alone is a job. Skill alone means you stop working, you stop earning. Skill is necessary but it's not enough.
 
-Time is the most democratic resource—we all get the same 24 hours. But how you use that time makes all the difference.
+**Time.** Not working more hours. Working on the right things. I wasted years doing things that felt productive but weren't. Entire months in Kolkata spent "being busy" while going absolutely nowhere. The moment I started asking "is this the highest-value thing I could be doing right now?" and genuinely asking, not performing the question for myself. I started moving faster than people who worked twice as hard.
 
-In my early days, I wasted time on low-impact activities. It wasn't until I started prioritizing tasks that generated the most value that things changed. I began automating routines, delegating tasks, and focusing on activities that had the highest return on investment.
+**Money.** Once you have some, you can make it work for you. But honestly, in your 20s, spend it on experiences and experiments. Every rupee I spent on trying something new compounded in ways I couldn't have predicted. The ₹10K I spent going to that event where I met the person who introduced me to the person who changed my trajectory? That's a return no stock market can match.
 
-**Tip:** Audit your daily activities. Cut out the fluff. Focus on what moves the needle.
+**Distribution.** The internet is the great equalizer. One piece of content can reach a million people while you sleep. One system you build can serve a thousand clients simultaneously. Distribution means your output is no longer limited by your input. This is where it gets unfair.
 
-#### **2. Money – Making Money Work for You**
+Stack two of these and you're doing well. Stack three and you're dangerous. Stack all four and you're building something real.
 
-Once you have some capital, money becomes a powerful leverage tool. It's easier to make money when you already have some.
+---
 
-I remember the first time I invested a small sum into a stock. Watching that money grow without additional effort on my part was a game-changer. Investing wisely can amplify your wealth exponentially. But now that you're young spend it on experiance, because every single $ you spend on yourself will compound over the years.
+Now here's the part I actually want to talk about. The part that's specific to right now, to this moment, to you reading this.
 
-**Tip:** Don't just save money—invest it. Let your money generate more money.
+AI broke the game open. But not in the way most people think.
 
-#### **3. Skill – Your First Form of Leverage**
+I keep seeing people call AI "a fifth type of leverage." No. That misses the entire point. AI is not a new category you add to the list. AI is the adoption layer. It's the thing that makes all four existing leverages suddenly accessible to people who never had access before.
 
-Skills are your gateway to providing value. The right skill set can set you apart and open doors you didn't know existed.
+That distinction matters. A lot.
 
-But here's the twist: AI is new, and we're at a stage where we're seeing skills get replaced one by one. It might sound alarming, but there's a silver lining. As the status quo is restructuring, you're getting a chance to make it big during this period.
+If AI were just a fifth lever, it would be one more thing to acquire. One more skill to stack. But that's not what's happening. What's happening is that the four levers that used to be locked behind years of experience, or capital, or connections, or audience. Those locks are breaking. AI is the thing breaking them.
 
-Most people running companies are in their 40s. It's not as easy for them to understand and use technology the way you can. Just keeping up with what's going on gives you more leverage than 95% of people your age.
+Let me be specific.
 
-**Tip:** Leverage AI and emerging tech. By staying ahead, you position yourself as invaluable in a world that's rapidly evolving.
+**Skill leverage used to take years.** You'd spend a decade getting good enough at something to charge real money for it. I know this because I lived it. Now someone with six months of focused learning and the right AI tools can deliver work that used to require that decade. Not because the AI does the work for them. Because the AI collapses the gap between what they know and what they can deliver. It's like having a senior partner looking over your shoulder who never gets tired and never judges you for asking basic questions.
 
-#### **4. Distribution – The New Age Leverage**
+**Time leverage used to require hiring people.** You'd need assistants, employees, systems, all of which cost money you didn't have. When I was building things in Kolkata, I couldn't afford to hire anyone. I was the entire team. Now AI handles the manual parts. The research, the first drafts, the data processing, the repetitive stuff that used to eat your entire day. What's left is the high-value thinking. The decisions. The things that actually move the needle. One person with AI tools now has the time leverage that used to require a team of five.
 
-In the past, distribution channels were controlled by gatekeepers. Today, the internet has leveled the playing field.
+**Money leverage used to require capital.** You needed money to test ideas, build products, run experiments. Now you can prototype in a weekend. You can test a business idea for nearly zero. You can build a working product before spending a single rupee on development. The cost of experimentation collapsed overnight. The money barrier, the thing that kept people from even starting, barely exists anymore.
 
-I'm starting to share my knowledge online, building an audience, creating networks. This not only expanded my reach but also multiplied the impact of my efforts. You see, anything you create once will be there in the internet forever, so essentially creating more will give you edge over those who don't create anything.
+**Distribution leverage used to require an audience or a budget.** You'd need followers, ad spend, connections. Now AI helps you create content at scale, understand what resonates, build systems that reach people automatically. One person can now build distribution that used to require a marketing team. I've seen this firsthand building content systems for Boring Marketing with Greg. The game changed completely.
 
-**Tip:** Utilize social media, youtube, blogs, podcasts—any platform that allows you to reach more people with less effort.
+So AI didn't add a new lever. It lowered the barrier to entry on every existing one. And that's way more powerful than a new category. Because it means someone starting from zero today, someone like I was in Jhargram or during those lost years in Kolkata, has access to all four leverages in a way that wasn't possible two years ago.
 
+The levers were always there. AI just made them reachable.
 
-### **Invest in Experiences**
+---
 
-While you're leveraging these tools to build wealth, don't forget to invest in experiences. You've got one life. Experiences enrich you in ways money can't quantify. They broaden your perspective, fuel creativity, and bring joy.
+Every time the market shakes, every time there's a massive technological shift, a window opens. The window doesn't stay open forever.
 
-**Tip:** Spend on experiences that contribute to your growth and happiness. They're priceless and irreplaceable.
+It was open when the internet started. It was open when mobile happened. It was open when crypto hit. Each time, a bunch of nobodies walked through the window and came out the other side with money and freedom. Not because they were smarter. Because they were there, and they moved.
 
+The AI window is open right now. Wide open. And the thing about this particular window is that it doesn't just help you build faster. It fundamentally changes who can play the game.
 
-### **Connecting the Dots**
+The 45-year-old executive running a company? He can't keep up with this. He's in meetings all day. He doesn't know what these tools can do. He doesn't know that the thing his team of five is doing manually can be automated in an afternoon by someone who understands the tools.
 
-Each form of leverage plays a role at different stages of your journey.
+You do. Or you can.
 
-- **Start with Skills:** In your early 20s, focus on building valuable skills, especially those that can't be easily automated.
-- **Leverage Time and Money:** Use your skills to earn money, then reinvest that money to make it work for you.
-- **Embrace Technology:** Stay updated with AI and tech advancements to gain an edge over others.
-- **Harness Distribution:** Expand your reach to amplify your value delivery.
-- **Invest in Experiences:** Enrich your life beyond monetary gains.
+And that gap between what you understand and what he doesn't? That's not a small advantage. That's asymmetric leverage. The kind that lets a kid from a village nobody has heard of compete with people who have ten times the resources.
 
-Navigating these leverages intelligently is what propels you toward wealth.
+I'm not saying this theoretically. I tested this.
 
-### **Closing Thoughts**
+I have two friends. Both their names start with Y. Both were at zero. No real income, no clear direction, the kind of stuck where you wake up and the day feels heavy before it starts.
 
-But here's something I've come to realize: being "rich" isn't what you truly try to be. It's a label people mark you with. No one is inherently rich. After a while, I understood that it's pointless—we're all living in someone else's story. The more people believe in the story, the more real it gets.
+I took one fundamental belief and tested it on them: if you understand value and leverage, and you have access to AI tools that collapse the barriers on every lever, you can make money. That's the whole thesis.
 
-Rich doesn't mean having millions of dollars. Rich means being able to experience something without constraint.
+One of them is now doing $10,000 a month. From zero. In months, not years.
 
-So, invest in yourself, embark on the journey, and make the most out of the opportunities in front of you. You're in a unique position to seize chances that others might overlook. Technology is your ally, and time is on your side.
+The other one was harder. Honestly, I thought he was beyond repair. The kind of stuck that feels permanent. He's making progress now. Not $10K yet. But moving. Actually moving, for the first time.
 
-In the end, wealth isn't just about money; it's about freedom, experiences, and living life on your own terms. Don't chase riches for the sake of a label. Live fully, learn continuously, and leverage wisely.
+I didn't give them money. I didn't give them clients. I gave them a framework. Value and leverage. Then I showed them how AI tools collapse the barriers on each lever. How skill becomes accessible faster. How time opens up. How money stops being the prerequisite to starting. How distribution becomes possible for one person.
 
-Because that's what truly makes you rich.
+That was the entire intervention.
+
+---
+
+The markets are shaky. The economy feels uncertain. AI is eating jobs. Half the internet is panicking.
+
+Good.
+
+When everything is uncertain, the person who moves with intention has an absurd advantage over the person who freezes. Most people freeze. That's not a judgment. It's just what happens. Fear is the default.
+
+But if you can look at a shaky market and see opportunity instead of threat. If you can see that the chaos is just the old structure rearranging itself and there's money lying on the floor during the rearrangement. Then you're already ahead.
+
+I come from a village. I've started from zero more times than I can count. I don't have a degree that matters. I failed the exam that was supposed to be my ticket out. I spent years in a city that was slowly crushing me before I figured out how to leave. I still can't send invoices without feeling weird about it.
+
+But I understand value and leverage. And I understand that right now, this window, this moment, is the easiest it has ever been to build something from nothing.
+
+Not easy. Easiest it's ever been. There's a difference.
+
+It's still going to be hard. You're still going to fail. You're still going to feel like you're drowning. But the tools exist now. The access exists now. The barriers that used to keep people like us out are collapsing in real time.
+
+The only thing that's missing is you deciding to move.
+
+---
+
+Being rich isn't a number. I've met people with more money than I'll ever have who are trapped. Trapped by their companies, their obligations, their image. That's not rich. That's just expensive.
+
+Rich is being able to wake up and decide what to do with your day. Rich is having options. Rich is not being afraid of starting over because you've done it so many times that zero doesn't scare you anymore.
+
+You get there through value and leverage. You get there faster right now because AI just collapsed every barrier that used to keep people out. Not by being a new lever. By making the existing levers reachable for anyone willing to learn.
+
+And you get there at all because at some point you stop reading essays about getting rich and you actually go do something.
+
+The window is open. Walk through it or don't. But don't pretend it isn't there.
