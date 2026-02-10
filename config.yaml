@@ -16,7 +16,7 @@ taxonomies:
   tag: tags
 
 permalinks:
-  writing: /:year/:month/:day/:slug/
+  writing: /writing/:slug/
 
 params:
   description: ""
