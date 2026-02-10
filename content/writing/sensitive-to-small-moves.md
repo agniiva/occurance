@@ -1,91 +1,103 @@
 ---
 title: "Sensitive to Small Moves"
-description: "Chaos isn't randomness. It's what happens in the space between who you were and who you're becoming."
+description: "There are moments when your life becomes maximally sensitive to small inputs. Most people panic. The ones who change stay in the chaos."
 date: "2025-01-05"
 slug: "sensitive-to-small-moves"
-tags: [chaos, liminality, life]
+tags: [chaos, liminality, strategy]
 ---
 
-You've done it. Stared at a fire for way too long. Watched water move over rocks until your sense of time dissolved. Stood somewhere windy and felt something pull at you that had nothing to do with air.
+Fire. Running water. Wind through trees.
 
-There's a reason we can't look away from these things. I think I finally know what it is.
-
----
-
-Chaos isn't randomness. That's the first thing people get wrong.
-
-A chaotic system follows rules. Strict ones, actually. But the smallest difference in where you start creates a completely different outcome. Two leaves fall into a stream an inch apart. One ends up pinned against a rock. The other makes it to the ocean.
-
-Same river. Same physics. Completely different lives.
-
-I've been that leaf. More than once.
+We can stare at them for hours and not know why. Something holds us there. I think I know what we're actually looking at.
 
 ---
 
-There's a word for the space between where you were and where you're going. Liminality. From the Latin "limen," meaning threshold. The doorway between one room and the next.
+In chaos theory, systems following deterministic rules can become wildly sensitive to tiny differences in starting conditions. Two leaves drop into the same stream, inches apart. One washes up on the left bank. The other travels two miles downstream and gets caught in a drain. Same water. Same rules. Completely different destinations.
 
-You know this space. Everyone does. It's the phase where you have no label. No clean answer to "so what do you do?" You're not the old thing anymore. You're not the new thing yet. You're just... in the doorway.
+This property has a name in physics. I want to give it a name in life.
 
-Those transitions feel terrible. No ground under you. No title. No identity you can point to and say, "this is me."
+**Liminal sensitivity.** The moments when your trajectory is most responsive to small inputs. When the old structure has dissolved and the new one hasn't formed yet. When a single conversation, a single "yes," a single person can bend the entire arc of what comes next.
 
-That's the liminal space. And that's exactly where chaos lives.
-
----
-
-When your life is stable, you're on a track. Momentum carries you. Your decisions matter, sure, but the range of possible outcomes is narrow. You're a boulder rolling downhill. The path is mostly set.
-
-In the liminal phase, you're not a boulder. You're a leaf in a stream. Everything is sensitive. The smallest input changes the entire trajectory.
-
-Most people hate this.
-
-So they try to skip it. Stable job to stable job. Known identity to known identity. The in-between makes them panic, and they grab the first thing that looks like solid ground.
-
-That's why most people never really change. Not because they can't. Because they won't stay in the liminal space long enough for chaos to do its work.
+Most people run from these moments. The ones who change are the ones who stay.
 
 ---
 
-The thing nobody tells you about the in-between is that it's the only time small moves actually matter.
+In 1961, Edward Lorenz was running weather simulations at MIT. He re-entered a starting value as 0.506 instead of 0.506127. Tiny difference. Three decimal places. The simulation produced a completely different weather pattern. Not a small deviation. A different world.
 
-One conversation changes your city. One "yes" to something that seemed weird at the time opens a door you didn't know existed. One person you meet at exactly the wrong moment in your life turns out to be exactly the right person.
+He called it sensitive dependence on initial conditions. The public called it the butterfly effect. Most people think that's a metaphor. It's not. It's a mathematical property of deterministic systems. The rules are fixed. The outcomes are not. Past a certain horizon, prediction becomes impossible. Not because the system is random. Because it is exquisitely, structurally sensitive.
 
-A cannabis venture that went nowhere. A company with your best friend that was two weeks from dying. Then a single meeting in December that changed everything.
-
-You can't plan this. You can't optimize for it. You can only be in the stream and stay open to where it takes you.
-
-In the transitional moments, you are maximally sensitive to small inputs. A single decision, a single meeting, a single uncomfortable "yes" can redirect everything. This doesn't happen when things are stable. It happens when things are uncertain.
-
-So the worst thing you can do in a liminal phase is freeze. Or grab the first exit. The best thing you can do is stay open. Move. Say yes to things that don't make sense yet. The moves feel small. They're not.
+This isn't a physics essay. This is about when it happens to you.
 
 ---
 
-Steve Jobs said you can't connect the dots looking forward. You can only connect them looking backwards.
+There's a word anthropologists use for the space between. Liminality. From the Latin *limen*: threshold. The doorway. You're not in the old room anymore. You're not in the new one yet. You're standing in the frame.
 
-Chaos theory says the same thing, just with math.
+No label. No title. No clean answer to "what do you do?"
 
-If you'd plotted my last five years on a graph, it would look like noise. Random motion. No coherent direction. Failed ventures, dead-end projects, cities that didn't work out, plans that dissolved on contact with reality.
+This is when your life becomes a chaotic system.
 
-But zoom out and there's a shape.
+When you're stable, your trajectory is locked. Job, identity, routine, paycheck, address. You're a boulder rolling downhill. Massive inertia. A conversation can't move you. A chance meeting can't redirect you. Small inputs bounce off. The path is set.
 
-In chaos theory, they call it a strange attractor. The system looks random at any given point, but over time it keeps being pulled toward a pattern. You can't predict a single moment. But the shape is unmistakable.
+But in the liminal phase, you're a leaf in a stream. Everything is sensitive. One conversation changes a career. One meeting changes a city. One "yes" to something that makes no sense rewrites the next five years.
 
-I kept orbiting the same things. Building. Operating. Solving problems for real people. Every failure circled the same center of gravity. I just couldn't see it from inside. You never can. The pattern only reveals itself after.
-
-The dots don't connect looking forward. They connect looking back. And sometimes they connect into shapes you never would have drawn on purpose.
+The math is the same. The system is the same. The difference is where you are in it.
 
 ---
 
-The fire. The water. The wind.
+Most people hate liminal space. The ambiguity. The not-knowing. The way it makes your chest tight at 2 AM when you can't explain your life in a sentence.
 
-Maybe we stare at them because they're mirrors. They're showing us what our lives actually look like from the inside. Constant transition. Constant sensitivity to small changes. Constant movement that somehow, over time, holds a shape.
+So they skip it.
 
-We keep waiting for the chaos to end. For things to settle. For the stable state where we finally know who we are and what we're doing.
+Stable job to stable job. Known identity to known identity. One relationship into the next without breathing. They grab the first thing that looks like solid ground and hold on.
 
-I don't think it works that way.
+This is why most people never really change. Not because they lack talent. Not because they lack opportunity. Because they collapse the uncertainty before chaos can do its work. They exit the doorway before the sensitivity peaks.
 
-The liminal space isn't the gap between your real life. It is your real life. The transitions aren't interruptions to the story. They're the whole story.
+This pattern repeats across careers, relationships, cities, companies. The people who transform are never the ones who made the safest move. They're the ones who tolerated the liminal space long enough for a small input to find them.
+
+---
+
+A cannabis venture that went nowhere. Months of work, connections, planning. It didn't fail. It just didn't converge. At the time it felt like wasted motion. Looking back: a data point. A calibration.
+
+A company with Sharique, my best friend since we were kids. By December 2024, we were two weeks from dead. Burn rate eating through what was left. No clear path forward. Pure liminal space. Every instinct screaming to grab something stable.
+
+Then a single meeting. Ben van Sprundel. One conversation that didn't just save the company. It changed the city we operated in. It changed who we were building for. It changed everything downstream in ways we couldn't have predicted and didn't try to.
+
+One "yes" to something that made no sense at the time. One small move during maximum sensitivity.
+
+Steve Jobs said you can't connect the dots looking forward. Chaos theory says the same thing, but with math. The dots connect into shapes you never would have drawn on purpose. You only see the pattern from the other side.
+
+---
+
+Here's the thing about chaotic systems. Even the wildly unpredictable ones orbit around certain shapes. In physics, these are called strange attractors. Plot a chaotic system over time and it looks like noise at any given moment. Zoom out, and the shape is unmistakable. A butterfly wing. A spiral. A pattern that was always there but invisible from inside any single loop.
+
+Five years of apparent noise. Failed ventures. Dead-end projects. Cities that didn't work out. Ideas that landed nowhere.
+
+But orbiting the same things the entire time. Building. Operating. Solving problems for real people. Getting obsessed with how things actually work, not how they're supposed to work on paper.
+
+The attractor was always there. You just can't see it from inside the doorway. You have to trust that the orbit has a shape even when every data point feels random. Because it does. The math guarantees it.
+
+---
+
+This isn't philosophy. It's operating strategy.
+
+Liminal phases are rare. Most of life is the stable part, the boulder rolling, the locked trajectory. But when you're in one, the rules change. Small moves compound harder than they ever will during stable phases. The sensitivity is real and it's temporary.
+
+Which means three things:
+
+Freezing is the worst response. You're wasting the only period where small inputs actually matter. Sitting still during maximum sensitivity is like having the wind at your back and refusing to move.
+
+Grabbing the first exit collapses optionality. The desperate lunge for stability feels like progress. It's not. It's choosing a trajectory before the system has shown you where it wants to go. You lock in too early and spend years course-correcting from a premature decision.
+
+Staying open is the strategy. Saying yes to things that don't make sense yet. Talking to people outside your current world. Making small moves in directions you can't fully justify. Not because you're being reckless. Because you understand that during liminal sensitivity, the small move that changes everything won't announce itself. It'll look like a normal Tuesday.
+
+---
+
+The fire. The running water. The wind.
+
+Maybe we stare because they're mirrors. Constant transition. Constant sensitivity. Movement that never settles but holds a shape over time. Chaos that isn't chaos at all, but a system too complex to read from the inside.
+
+The liminal space isn't the gap between your real life. It is your real life. The doorway isn't the obstacle. It's the instrument.
 
 Chaos isn't the enemy. It's the operating system.
-
-And right now, wherever you are, if the ground feels uncertain and you don't know what comes next. Good. You're in the doorway. That's where everything changes.
 
 Stay there a little longer than feels comfortable.
