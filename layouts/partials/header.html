@@ -7,11 +7,16 @@
   <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   {{ $ogTitle := cond .IsHome .Site.Title .Title }}
-  <meta property="og:image" content="{{ .Site.BaseURL }}api/og?title={{ $ogTitle | urlquery }}">
+  {{ $ogImage := "og/home.png" }}
+  {{ if .IsPage }}{{ $ogImage = printf "og/%s.png" .File.ContentBaseName }}{{ end }}
+  {{ if eq .RelPermalink "/about/" }}{{ $ogImage = "og/about.png" }}{{ end }}
+  {{ if eq .RelPermalink "/links/" }}{{ $ogImage = "og/links.png" }}{{ end }}
+  {{ if eq .RelPermalink "/writing/" }}{{ $ogImage = "og/writing.png" }}{{ end }}
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ $ogImage }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}api/og?title={{ $ogTitle | urlquery }}">
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $ogImage }}">
   <meta property="og:title" content="{{ $ogTitle }}">
   <meta property="og:description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
