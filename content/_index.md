@@ -1,28 +1,28 @@
 ---
 title: I'm Agniva
-description: "Agniva Mahata — operator, builder, CTO at BenAI. Writing about AI, consciousness, and everything in between."
+description: "Founder working across growth, AI, markets, and creative work. Building businesses, products, and ideas more visibly under my own name."
 ---
 
 Hi, I'm Agniva Mahata.
 
-I build the business side of creator companies. Distribution, offers, operations. Someone has the audience and expertise, I build the system that turns it into revenue.
+Most people who know my work know it through things that did not carry my name.
 
-**Now**
+I spent the last few years building behind the scenes. Products. Growth engines. AI workflows. Revenue systems. Things that made real money. Useful work. But it also made me hard to explain.
 
-[BenAI](https://benai.co) (with [Ben van Sprundel](https://www.youtube.com/@BenvanSprundel)): CTO and partner. Multi-million dollar company, bootstrapped. 100K+ YouTube subscribers, 1000+ paying members, courses, templates. A part that isn't Ben on camera is my work.
+So here is the simpler version.
 
-[Boring Marketing](https://boringmarketing.com) (with [Greg Isenberg](https://www.youtube.com/@GregIsenberg)): Founding team. Helped operationalize the company from zero to $120K MRR in seven months.
+I build businesses. I study markets. I work with AI as leverage. I make art because business alone is too small a container for how I see the world.
 
-[Cash Cow Labs](https://cashcowlabs.io): Exploring some cool creator-based business models.
+I care about growth, startups, technology, taste, and the deeper forces underneath them. What changes behavior. What creates belief. What compounds. What quietly reshapes a person or a company from the inside.
 
-**Before this**
+Cash Cow Labs is the umbrella for a lot of that work. [BenAI](https://benai.co) was one of the creator-led businesses we built there. We turned audience into products, and two of those products crossed $1M ARR within a year. Before that, I was part of the early team at [Boring Marketing](https://boringmarketing.com), where we helped grow the business from 0 to $120K MRR within a year.
 
-Built and sold products, ran R&D teams, did a stint in venture capital, consulted for GIZ on African SMEs, built a COVID resource platform during the Kolkata wave that actually got used. Started early, broke a lot of things, learned what works.
+Now I'm doing more of that work in public.
 
----
+More writing. More video. More creation. Same brain.
 
-I'm not an agency or a consultant. I'm the operator who builds the monetization layer and stays in it.
+This site is where I think out loud, show the work, and make it easier for the right people to find me.
 
-Outside of work: produce music, consciousness research, raves, whatever rabbit hole I'm currently in.
+I like being useful to people building real things.
 
-24, no fixed address, usually somewhere in Asia.
+If you're working on something ambitious and want to talk growth, AI, product, markets, or the shape of the business itself, email me at [agniva@cows.wtf](mailto:agniva@cows.wtf).
