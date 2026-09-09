@@ -1,24 +1,17 @@
 {{ partial "header.html" . }}
-
-
-{{ if .IsHome }}
-
-{{ .Content }}
-
+<header class="introduction"><h1>{{ .Title }}</h1></header>
+{{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+{{ if eq .Kind "taxonomy" }}
+  <ul class="writing-list">
+    {{ range .Pages.ByTitle }}
+    <li><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><span class="count">{{ len .Pages }}</span></a></li>
+    {{ end }}
+  </ul>
 {{ else }}
-
-
- 
-<ul class="list">
-   {{ range (.Paginate ( where .Site.RegularPages "Section" "writing" ).ByDate.Reverse).Pages }}
-      {{ if ne .Kind "section" }}
-  <li>
-    <time>{{ .Date.Format "2006-01-02" }}</time>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </li>
-  {{ end }}
-  {{ end }}
-</ul>
+  <ol class="writing-list">
+    {{ range .RegularPages.ByDate.Reverse }}
+    <li><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time></a></li>
+    {{ end }}
+  </ol>
 {{ end }}
-
 {{ partial "footer.html" . }}

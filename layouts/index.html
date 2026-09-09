@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+<header class="introduction">
+  <h1>I’m Agniva.<br>I build businesses and study how they work.</h1>
+</header>
+<div class="prose">{{ .Content }}</div>
+<p class="contact">You can reach me at <a href="mailto:agniva@cows.wtf">agniva@cows.wtf</a>.</p>
+<section class="writing" aria-labelledby="writing-title">
+  <div class="section-heading">
+    <h2 id="writing-title">Recent writing</h2>
+    <a href="{{ "writing/" | relURL }}">All writing <span aria-hidden="true">↗</span></a>
+  </div>
+  <ol class="writing-list">
+    {{ range first 3 (where .Site.RegularPages "Section" "writing").ByDate.Reverse }}
+    <li><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time></a></li>
+    {{ end }}
+  </ol>
+</section>
+{{ partial "footer.html" . }}

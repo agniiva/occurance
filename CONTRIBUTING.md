@@ -1,165 +1,31 @@
-# Contributing to agnivamahata.com
+# Contributing
 
-## Site Overview
+## Site direction
 
-- **Framework:** Hugo (static site generator)
-- **Hosting:** Vercel (git-triggered deploys only, never CLI)
-- **Repo:** github.com/agniiva/occurance
-- **Working fork:** github.com/oreo-agi/occurance
-- **Live:** www.agnivamahata.com
+This is Agniva's founder-led personal website. Business, AI, art, culture, and human life can coexist here; do not impose a professional-versus-personal split between this site and his newsletter.
 
-## Content Strategy
+Use concrete experience, quiet confidence, and ordinary language. Avoid inflated authority, unsupported outcomes, generic service copy, decorative subtitles, and template slogans. Existing essays are authored content: do not rewrite or remove them as part of a visual cleanup.
 
-**agnivamahata.com** = professional, practical, opinionated. This is Agniva the operator, the builder, the person who went from Jhargram to building multi-million dollar companies.
+The approved interface uses centered top navigation without a name/logo lockup, modest old-book headings, stable reading text, and footer social links. Keep CRT interference on the brief navigation overlay, not on duplicated or blurred lettering. Audio is a quiet, short click with a persistent mute control. Preserve reduced-motion preferences, ordinary modifier clicks, keyboard navigation, Back behavior, and browsing without JavaScript.
 
-**textureoftomorrow.com** (Substack) = philosophical, creative, consciousness, culture. That's a separate thing.
+## Adding an essay
 
-Don't mix the two. If it's about consciousness, language, existential stuff, it goes on Substack. If it's about building, money, leverage, AI, decisions, practical experience, it goes here.
+Create `content/writing/your-slug.md`:
 
-## Writing Style
-
-### Voice
-- Raw, direct, personal. Like talking to a friend, not writing a blog post.
-- Opinionated. Have a take. Don't hedge everything.
-- Use real stories. Jhargram, Kolkata, Bangalore, BenAI, Boring Marketing. Specific > generic.
-- Short sentences. Fragments are fine. Rhythm matters.
-
-### Formatting
-- No em dashes. Use periods, commas, or line breaks instead.
-- No listicle energy. No "Let's dive in." No "Tip:" boxes.
-- No "Great question!" or "I'd be happy to help" energy.
-- Horizontal rules (---) to separate sections, not headers for everything.
-- Bold for emphasis sparingly. Not every other word.
-
-### What sounds like Agniva
-- "That's the whole thing. That's the entire point."
-- "I show up."
-- "Both doesn't work. I'll say that again. Both doesn't work."
-- Starting from zero, not being afraid of it.
-- Talking about trust as real currency.
-
-### What doesn't sound like Agniva
-- Corporate tone, LinkedIn thought-leader voice
-- "In this article, we'll explore..."
-- Motivational poster quotes
-- Generic self-help advice without personal experience backing it
-
-## Adding a New Post
-
-### 1. Create the content file
-
-```
-content/writing/your-slug.md
-```
-
-Frontmatter template:
 ```yaml
 ---
-title: "Your Title Here"
-description: "One line that makes someone want to read it."
+title: "Your title"
+description: "A concise description of the essay."
 date: YYYY-MM-DD
-slug: "your-slug-here"
-tags: ["tag1", "tag2"]
+slug: "your-slug"
+tags: []
 ---
 ```
 
-### 2. Generate the OG image
+Add the essay body below the frontmatter. Run `npm run generate:og` when adding or renaming an essay. Social-image filenames use the Markdown filename, not the optional URL slug.
 
-After creating the post, run:
+## Verification and publishing
 
-```bash
-node scripts/generate-og.js
-```
+Follow the build and test commands in README.md. Check the generated feed, metadata, links, and mobile layout before publishing. Use a branch and PR for normal collaboration; publish only when Agniva authorizes it. The canonical repository is `agniiva/occurance`; deployment is handled by its existing Vercel GitHub integration.
 
-This generates a unique Clifford attractor PNG for each post, stored in `static/og/`. The attractor pattern is seeded by the post title, so the same title always produces the same art.
-
-### 3. Create a PR
-
-Always work from the fork (oreo-agi/occurance) and PR into main (agniiva/occurance).
-
-```bash
-git checkout main
-git fetch upstream
-git reset --hard upstream/main
-git checkout -b content/your-branch-name
-# make changes
-git add -A
-git commit -m "content: description of what you did"
-git push origin content/your-branch-name
-gh pr create --repo agniiva/occurance --head oreo-agi:content/your-branch-name --base main --title "Title" --body "Description"
-```
-
-### 4. Never use Vercel CLI
-
-**Do not run `vercel --prod` or any Vercel CLI deploy.** CLI deploys don't compile serverless functions and can break the production site. Only git-triggered deploys (from PR merges) work correctly.
-
-## URL Structure
-
-- Posts: `/writing/slug-name` (no trailing slash)
-- Pages: `/about`, `/links` (no trailing slash)
-- Permalinks config: `writing: /writing/:slug/`
-- Vercel strips trailing slashes via vercel.json
-
-## OG Images
-
-- Static PNGs in `static/og/`
-- Each post: `static/og/{slug}.png`
-- Pages: `static/og/home.png`, `about.png`, `links.png`, `writing.png`
-- Generated by `scripts/generate-og.js` using Clifford strange attractors
-- Unique pattern per post, deterministic (same title = same image)
-- 1200x630px, dark background, white attractor traces, title overlay
-
-## Project Structure
-
-```
-content/
-  _index.md          # Homepage
-  about.md           # About page
-  links.md           # Links/antilibrary
-  writing/           # Blog posts
-    no-map.md
-    rich-in-twenties.md
-    chaos-hypnotic-state.md
-    seo-3.md
-    stateful-agent.md
-
-layouts/
-  partials/
-    header.html      # Head, meta tags, OG images
-    footer.html      # Footer nav, analytics script
-  _default/
-    list.html        # List pages
-    single.html      # Single post pages
-
-static/
-  og/                # Pre-generated OG images
-  admin/             # Decap CMS (may not be fully functional)
-
-api/
-  auth.js            # GitHub OAuth for CMS
-  callback.js        # OAuth callback
-
-scripts/
-  generate-og.js     # OG image generator
-
-config.yaml          # Hugo config
-vercel.json          # Vercel config (trailing slash)
-```
-
-## Content Pillars (Planned)
-
-These are the deep essays for the site:
-
-1. **The Invisible Partner Playbook** - How to build behind creators
-2. **Jhargram to Global** - Tier-3 village to multi-million dollar businesses in 5 years
-3. **Monetization Architecture** - How to look at a creator and see the business
-4. **Speed as Strategy** - Why moving fast beats moving right
-5. **No-Permission Operating** - Nobody is coming to tell you you're ready
-
-Plus a `/beliefs` page (living document of principles, updated over time).
-
-## Analytics
-
-- Vercel Web Analytics enabled
-- Script in footer: `/_vercel/insights/script.js`
-- Enable in Vercel dashboard: Project > Analytics tab > Enable
+Never commit credentials, local deployment bindings, generated output, or test artifacts. Keep required license notices with redistributed code and fonts.

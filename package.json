@@ -1,46 +1,22 @@
 {
   "name": "occurance",
   "version": "1.0.0",
-  "description": "Simplica is content focused, minimal theme for Hugo. The theme is perfectly suitable for writers. No JS! AAA, 100/100 scores on Lighthouse, Gmetrix and Webpagetest!",
-  "main": "index.js",
-  "dependencies": {
-    "@vercel/og": "^0.8.6",
-    "base64-js": "^0.0.8",
-    "camelize": "^1.0.1",
-    "canvas": "^3.2.1",
-    "color-name": "^1.1.4",
-    "css-background-parser": "^0.1.0",
-    "css-box-shadow": "^1.0.0-3",
-    "css-color-keywords": "^1.0.0",
-    "css-gradient-parser": "^0.0.16",
-    "css-to-react-native": "^3.2.0",
-    "emoji-regex-xs": "^2.0.1",
-    "escape-html": "^1.0.3",
-    "fflate": "^0.7.4",
-    "hex-rgb": "^4.3.0",
-    "linebreak": "^1.1.0",
-    "pako": "^0.2.9",
-    "parse-css-color": "^0.2.1",
-    "postcss-value-parser": "^4.2.0",
-    "satori": "^0.16.0",
-    "string.prototype.codepointat": "^0.2.1",
-    "tiny-inflate": "^1.0.3",
-    "unicode-trie": "^2.0.0",
-    "yoga-layout": "^3.2.1"
-  },
+  "private": true,
+  "description": "Agniva Mahata's personal website, built with Hugo.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "hugo --minify",
+    "test": "python3 -m unittest discover -s tests -v && node --test tests/*.test.cjs",
+    "generate:og": "node scripts/generate-og.js"
+  },
+  "dependencies": {
+    "canvas": "^3.2.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oreo-agi/occurance.git"
+    "url": "git+https://github.com/agniiva/occurance.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Agniva Mahata",
+  "license": "MIT",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/oreo-agi/occurance/issues"
-  },
-  "homepage": "https://github.com/oreo-agi/occurance#readme"
+  "homepage": "https://www.agnivamahata.com"
 }

@@ -1,13 +1,11 @@
-  </article>
-  <hr>
-  <footer>
-    <nav>
-      <a href="/">Index</a>
-      <a href="/writing">Writing</a> 
-      <a href="/links" title="My Antilibrary">Links</a>
-     <a href="/atom.xml" title="RSS feed of website">Feed</a>
-   </nav>
-  </footer>
-  <script defer src="/_vercel/insights/script.js"></script>
-  </body>
+      <footer class="colophon">
+        {{ partial "social-links.html" . }}
+        <label class="effects-control"><input id="pause-effects" type="checkbox"> Pause effects</label>
+        <button id="channel-sound" class="sound-toggle" type="button" aria-pressed="true" hidden>Sound on</button>
+        <a href="{{ "atom.xml" | relURL }}">Follow via RSS <span aria-hidden="true">↗</span></a>
+      </footer>
+    </main>
+  </div>
+  <div class="channel-overlay" aria-hidden="true"></div>
+</body>
 </html>

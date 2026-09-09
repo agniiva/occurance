@@ -1,12 +1,20 @@
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
-# Hugo
+# Hugo build output
 public/
 resources/
-resources/_gen/
 .hugo_build.lock
 
-# Node
+# Dependencies and local configuration
 node_modules/
+.vercel/
+.env
+.env.*
+!.env.example
+
+# Tests and local artifacts
+__pycache__/
+*.pyc
+.artifacts/

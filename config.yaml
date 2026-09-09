@@ -1,16 +1,11 @@
-baseurl: 'https://agnivamahata.com'
+baseurl: 'https://www.agnivamahata.com/'
 languageCode: en-us
 title: Agniva Mahata
-googleAnalytics: ""
-disqusShortname: ""
 disableHugoGeneratorInject: true
 pluralizeListTitles: false
 enableRobotsTXT: true
 minify:
   minifyOutput: true
-
-pagination:
-  pagerSize: 9999
 
 taxonomies:
   tag: tags
@@ -19,16 +14,7 @@ permalinks:
   writing: /writing/:slug/
 
 params:
-  description: ""
-  subtitle: ""
-
-frontmatter:
-  author:
-  github:
-  facebook:
-  og_image:
-  sitename:
-  twitter:
+  description: "Founder building businesses and studying how they work. Writing about business, AI, art, culture and human life."
 
 sitemap:
   changefreq: daily
@@ -37,5 +23,5 @@ sitemap:
 
 outputFormats:
   RSS:
-    mediatype: application/rss
+    mediatype: application/rss+xml
     baseName: atom
