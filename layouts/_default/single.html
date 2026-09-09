@@ -4,6 +4,7 @@
     <h1>{{ .Title }}</h1>
     {{ if eq .Section "writing" }}<p class="article-date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></p>{{ end }}
   </header>
+  {{ partial "content-image.html" (dict "src" .Params.image "alt" .Params.image_alt "cover" true) }}
   <div class="prose">{{ .Content }}</div>
 </article>
 {{ partial "footer.html" . }}

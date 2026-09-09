@@ -1,5 +1,8 @@
 ---
 title: I'm Agniva
+headline: I’m Agniva.
+subheading: I build businesses and study how they work.
+writing_heading: Recent writing
 description: "Founder building businesses and studying how they work. Writing about business, AI, art, culture and human life."
 ---
 

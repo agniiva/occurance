@@ -1,12 +1,13 @@
 {{ partial "header.html" . }}
 <header class="introduction">
-  <h1>I’m Agniva.<br>I build businesses and study how they work.</h1>
+  <h1>{{ .Params.headline }}{{ with .Params.subheading }}<br>{{ . }}{{ end }}</h1>
 </header>
+{{ partial "content-image.html" (dict "src" .Params.image "alt" .Params.image_alt "cover" true) }}
 <div class="prose">{{ .Content }}</div>
-<p class="contact">You can reach me at <a href="mailto:agniva@cows.wtf">agniva@cows.wtf</a>.</p>
+<p class="contact">{{ .Site.Data.site.contact_label }} <a href="mailto:{{ .Site.Data.site.contact_email }}">{{ .Site.Data.site.contact_email }}</a>.</p>
 <section class="writing" aria-labelledby="writing-title">
   <div class="section-heading">
-    <h2 id="writing-title">Recent writing</h2>
+    <h2 id="writing-title">{{ .Params.writing_heading | default "Recent writing" }}</h2>
     <a href="{{ "writing/" | relURL }}">All writing <span aria-hidden="true">↗</span></a>
   </div>
   <ol class="writing-list">

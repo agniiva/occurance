@@ -1,0 +1,1 @@
+{{ with .src }}<img src="{{ . }}" alt="{{ $.alt | default "" }}" class="{{ if $.cover }}cover-image{{ else }}content-image{{ end }}" loading="lazy" decoding="async">{{ end }}

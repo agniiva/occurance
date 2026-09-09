@@ -43,6 +43,30 @@ Browser tests require the local production-style server above and Chrome. Set `P
 
 Generate the click with `python3 scripts/generate-channel-sound.py`. To regenerate social images, install dependencies with `npm ci`, then run `npm run generate:og`.
 
+## Editing without code
+
+Open [www.agnivamahata.com/admin](https://www.agnivamahata.com/admin) and sign in with the GitHub account that has write access to `agniiva/occurance`.
+
+- **Writing:** create or edit posts, add a title/date/description, upload a cover image, or insert images directly into the body with the editor's image button. Add descriptive alt text. Keep an existing post's URL slug unchanged unless you intend to move it.
+- **Pages → Home:** edit the headline, subheading, introduction, optional cover image, and writing-section heading.
+- **Pages → About / Links:** edit titles, body content, and optional cover images.
+- **Site settings → Contact and social links:** edit the email, contact sentence, and social-profile URLs. An empty social URL hides that icon.
+- **Media:** upload images to `static/uploads`; design assets are kept outside this library.
+
+The editorial workflow lets you save drafts before publishing. A draft stays off the live site; the Publish action merges it into `main` and triggers Vercel. Allow the deployment to finish before checking the public page. No test post or image is published as part of editor verification.
+
+New posts use their cover image for social previews. Without a cover or an existing generated social image, they use the site preview image, so publishing does not require running a script.
+
+The layout and transition effects remain in code to prevent accidental design changes. The editor is not an inline page builder.
+
+For an optional full editor smoke test, with the local built site served on port 8768:
+
+```sh
+uv run --with playwright --with pyyaml python tests/cms_editor_browser.py
+```
+
+This starts a pinned local proxy against an automatically created disposable copy, writes test content only there, builds the result, then deletes the copy. Production retains the GitHub backend and editorial workflow.
+
 ## Deployment
 
 The existing Vercel GitHub integration deploys `main` from `agniiva/occurance`. Push through GitHub, wait for the Vercel deployment to succeed, and verify the custom domain. Do not deploy a prebuilt static directory separately: the site also has CMS API routes.

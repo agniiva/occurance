@@ -6,8 +6,12 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   {{ $description := .Description | default .Site.Params.description }}
   {{ $image := "og/home.png" }}
-  {{ if and .IsPage .File }}{{ $image = printf "og/%s.png" .File.ContentBaseName }}{{ end }}
+  {{ if and .IsPage .File }}
+    {{ $candidate := printf "og/%s.png" .File.ContentBaseName }}
+    {{ if fileExists (printf "static/%s" $candidate) }}{{ $image = $candidate }}{{ end }}
+  {{ end }}
   {{ if eq .Section "writing" }}{{ if not .IsPage }}{{ $image = "og/writing.png" }}{{ end }}{{ end }}
+  {{ with .Params.image }}{{ $image = . }}{{ end }}
   <meta name="description" content="{{ $description }}">
   <meta name="author" content="Agniva Mahata">
   <link rel="canonical" href="{{ .Permalink }}">
@@ -35,7 +39,7 @@
         <a href="{{ "writing/" | relURL }}"{{ if eq .Section "writing" }} aria-current="{{ if .IsPage }}location{{ else }}page{{ end }}"{{ end }}>Writing</a>
         <a href="{{ "about/" | relURL }}"{{ if eq .RelPermalink "/about/" }} aria-current="page"{{ end }}>About</a>
         <a href="{{ "links/" | relURL }}"{{ if eq .RelPermalink "/links/" }} aria-current="page"{{ end }}>Links</a>
-        <a href="mailto:agniva@cows.wtf">Contact <span aria-hidden="true">↗</span></a>
+        <a href="mailto:{{ .Site.Data.site.contact_email }}">Contact <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
     <main id="main" tabindex="-1">

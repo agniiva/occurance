@@ -4,55 +4,85 @@ backend:
   branch: main
   base_url: https://www.agnivamahata.com
   auth_endpoint: /api/auth
+  squash_merges: true
 
+publish_mode: editorial_workflow
 site_url: https://www.agnivamahata.com
 display_url: https://www.agnivamahata.com
-
-media_folder: static/images
-public_folder: /images
+media_folder: static/uploads
+public_folder: /uploads
 
 collections:
-  # ── Writing (blog posts / essays) ──
-  - name: "writing"
-    label: "Writing"
-    label_singular: "Post"
-    folder: "content/writing"
+  - name: writing
+    label: Writing
+    label_singular: Post
+    description: "Create an essay, add images, and save a draft. Publish when it is ready to go live."
+    folder: content/writing
     create: true
     slug: "{{slug}}"
-    sortable_fields: ["date", "title"]
+    sortable_fields: [date, title]
     summary: "{{title}} — {{date}}"
+    preview_path: "writing/{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string", hint: "Short summary for SEO and previews" }
-      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
-      - { label: "Tags", name: "tags", widget: "list", allow_add: true, hint: "Comma-separated tags" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {label: Title, name: title, widget: string}
+      - {label: Description, name: description, widget: text, required: false, hint: "A short description for search and link previews."}
+      - {label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
+      - {label: URL slug, name: slug, widget: string, required: false, hint: "Optional. Keep this unchanged on existing posts to preserve their links.", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Use lowercase words separated by hyphens.']}
+      - {label: Tags, name: tags, widget: list, required: false, default: []}
+      - {label: Cover image, name: image, widget: image, required: false}
+      - {label: Cover image description, name: image_alt, widget: string, required: false, hint: "Describe the image for readers who cannot see it."}
+      - {label: Body, name: body, widget: markdown, hint: "Use the image button in the editor to upload or insert images."}
 
-  # ── Pages (About, Links, Home) ──
-  - name: "pages"
-    label: "Pages"
-    label_singular: "Page"
+  - name: pages
+    label: Pages
+    label_singular: Page
     files:
-      - label: "Home"
-        name: "home"
-        file: "content/_index.md"
+      - label: Home
+        name: home
+        file: content/_index.md
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - {label: Page title, name: title, widget: string}
+          - {label: Search description, name: description, widget: text}
+          - {label: Opening headline, name: headline, widget: string}
+          - {label: Opening subheading, name: subheading, widget: string}
+          - {label: Writing section heading, name: writing_heading, widget: string, default: Recent writing}
+          - {label: Cover image, name: image, widget: image, required: false}
+          - {label: Cover image description, name: image_alt, widget: string, required: false}
+          - {label: Introduction, name: body, widget: markdown, hint: "Edit your introduction and insert images here."}
+      - label: About
+        name: about
+        file: content/about.md
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text, required: false}
+          - {label: Cover image, name: image, widget: image, required: false}
+          - {label: Cover image description, name: image_alt, widget: string, required: false}
+          - {label: Body, name: body, widget: markdown}
+      - label: Links
+        name: links
+        file: content/links.md
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text, required: false}
+          - {label: Cover image, name: image, widget: image, required: false}
+          - {label: Cover image description, name: image_alt, widget: string, required: false}
+          - {label: Body, name: body, widget: markdown}
 
-      - label: "About"
-        name: "about"
-        file: "content/about.md"
+  - name: settings
+    label: Site settings
+    files:
+      - label: Contact and social links
+        name: site
+        file: data/site.yaml
+        format: yaml
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-
-      - label: "Links"
-        name: "links"
-        file: "content/links.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - {label: Contact email, name: contact_email, widget: string, pattern: ['^[^\s@]+@[^\s@]+\.[^\s@]+$', 'Enter a valid email address.']}
+          - {label: Contact sentence, name: contact_label, widget: string, hint: "The words before your email address on the homepage."}
+          - label: Social profiles
+            name: social
+            widget: object
+            fields:
+              - {label: LinkedIn, name: linkedin, widget: string, required: false, pattern: ['^https://', 'Use a full https:// URL.']}
+              - {label: X, name: x, widget: string, required: false, pattern: ['^https://', 'Use a full https:// URL.']}
+              - {label: GitHub, name: github, widget: string, required: false, pattern: ['^https://', 'Use a full https:// URL.']}
+              - {label: Newsletter, name: newsletter, widget: string, required: false, pattern: ['^https://', 'Use a full https:// URL.']}
