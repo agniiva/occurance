@@ -34,12 +34,16 @@ class EditorTests(unittest.TestCase):
             (site / 'content/_index.md').write_text(
                 '---\ntitle: Home\nheadline: Edited headline\nsubheading: Edited subheading\n'
                 'writing_heading: Edited writing label\n---\n\nEdited body text.\n')
+            (site / 'content/writing').mkdir(exist_ok=True)
+            (site / 'content/writing/editor-fixture.md').write_text(
+                '---\ntitle: Editor fixture\ndate: 2020-01-01\n---\n\nA published post.\n')
             subprocess.run(['hugo', '--destination', str(site / 'public')], cwd=site,
                            check=True, capture_output=True, text=True)
             html = (site / 'public/index.html').read_text()
             for expected in ['Edited headline', 'Edited subheading', 'Edited body text.',
                              'Edited writing label', 'Write to me', 'editor@example.test',
-                             'https://x.com/editor-test', 'https://github.com/editor-test']:
+                             'https://x.com/editor-test', 'https://github.com/editor-test',
+                             '/writing/', 'Editor fixture']:
                 self.assertIn(expected, html, expected)
 
     def test_uploaded_and_external_images_build_without_manual_assets(self):
@@ -51,6 +55,7 @@ class EditorTests(unittest.TestCase):
             shutil.copy2(ROOT / 'config.yaml', site / 'config.yaml')
             (site / 'static/uploads').mkdir(exist_ok=True)
             shutil.copy2(ROOT / 'static/images/tv-static.png', site / 'static/uploads/editor-fixture.png')
+            (site / 'content/writing').mkdir(exist_ok=True)
             (site / 'content/writing/editor-fixture.md').write_text(
                 '---\ntitle: Editor fixture\ndate: 2020-01-01\n'
                 'image: /uploads/editor-fixture.png\nimage_alt: Uploaded cover\n---\n\n'

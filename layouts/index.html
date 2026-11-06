@@ -5,15 +5,18 @@
 {{ partial "content-image.html" (dict "src" .Params.image "alt" .Params.image_alt "cover" true) }}
 <div class="prose">{{ .Content }}</div>
 <p class="contact">{{ .Site.Data.site.contact_label }} <a href="mailto:{{ .Site.Data.site.contact_email }}">{{ .Site.Data.site.contact_email }}</a>.</p>
+{{ $posts := (where .Site.RegularPages "Section" "writing").ByDate.Reverse }}
+{{ if $posts }}
 <section class="writing" aria-labelledby="writing-title">
   <div class="section-heading">
     <h2 id="writing-title">{{ .Params.writing_heading | default "Recent writing" }}</h2>
     <a href="{{ "writing/" | relURL }}">All writing <span aria-hidden="true">↗</span></a>
   </div>
   <ol class="writing-list">
-    {{ range first 3 (where .Site.RegularPages "Section" "writing").ByDate.Reverse }}
+    {{ range first 3 $posts }}
     <li><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time></a></li>
     {{ end }}
   </ol>
 </section>
+{{ end }}
 {{ partial "footer.html" . }}

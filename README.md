@@ -33,6 +33,7 @@ Browser tests require the local production-style server above and Chrome. Set `P
 ## Content and assets
 
 - `content/`: homepage, About, Links, and essays.
+- `archive/`: retired essays and their social images. Hugo does not build this folder; see `archive/README.md`.
 - `layouts/partials/`: shared document head, navigation, footer, and social links.
 - `assets/scss/home.scss`: shared site styling.
 - `static/js/channel.js`: progressive navigation, motion preference, and sound controls.
@@ -47,7 +48,7 @@ Generate the click with `python3 scripts/generate-channel-sound.py`. To regenera
 
 Open [www.agnivamahata.com/admin](https://www.agnivamahata.com/admin) and sign in with the GitHub account that has write access to `agniiva/occurance`.
 
-- **Writing:** create or edit posts, add a title/date/description, upload a cover image, or insert images directly into the body with the editor's image button. Add descriptive alt text. Keep an existing post's URL slug unchanged unless you intend to move it.
+- **Writing:** the Writing page, navigation link, and homepage section appear only while at least one post is published. Create or edit posts, add a title/date/description, upload a cover image, or insert images directly into the body with the editor's image button. Add descriptive alt text. Keep an existing post's URL slug unchanged unless you intend to move it.
 - **Pages → Home:** edit the headline, subheading, introduction, optional cover image, and writing-section heading.
 - **Pages → About / Links:** edit titles, body content, and optional cover images.
 - **Site settings → Contact and social links:** edit the email, contact sentence, and social-profile URLs. An empty social URL hides that icon.

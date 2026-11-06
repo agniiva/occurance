@@ -44,8 +44,7 @@ class HomepageTests(unittest.TestCase):
         self.assertNotIn('simplica', self.html.lower())
 
     def test_public_pages_share_navigation_and_footer(self):
-        for relative in ['writing/index.html', 'about/index.html', 'links/index.html',
-                         'writing/no-map/index.html', '404.html']:
+        for relative in ['about/index.html', 'links/index.html', '404.html']:
             with self.subTest(page=relative):
                 document = Document()
                 document.feed((Path(self.output.name) / relative).read_text())
@@ -54,6 +53,17 @@ class HomepageTests(unittest.TestCase):
                 self.assertTrue(any(attrs.get('class') == 'social-links'
                                     for _, attrs in document.elements), relative)
                 self.assertEqual(sum(tag == 'h1' for tag, _ in document.elements), 1)
+
+    def test_site_has_no_writing_while_no_posts_are_published(self):
+        output = Path(self.output.name)
+        self.assertFalse((output / 'writing').exists())
+        feed = (output / 'atom.xml').read_text()
+        self.assertNotIn('<item>', feed)
+        self.assertNotIn('lastBuildDate', feed)
+        self.assertNotIn('/writing', (output / 'sitemap.xml').read_text())
+        for relative in ['index.html', 'about/index.html', 'links/index.html', '404.html']:
+            with self.subTest(page=relative):
+                self.assertNotIn('writing/', (output / relative).read_text())
 
     def test_header_has_no_decorative_subtitles_or_sidebar(self):
         text = ' '.join(self.document.text)
