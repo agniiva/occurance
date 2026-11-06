@@ -8,6 +8,9 @@
     "test": "python3 -m unittest discover -s tests -v && node --test tests/*.test.cjs",
     "generate:og": "node scripts/generate-og.js"
   },
+  "engines": {
+    "node": "26.x"
+  },
   "dependencies": {
     "canvas": "^3.2.1"
   },
