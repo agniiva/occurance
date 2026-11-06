@@ -35,7 +35,7 @@ with sync_playwright() as p:
             page.evaluate('document.fonts.ready')
             assert response.status==200,(route,response.status)
             assert page.locator('h1').count()==1,route
-            assert page.locator('nav[aria-label="Primary"] a').count()==5,route
+            assert page.locator('nav[aria-label="Primary"] a').count()==(5 if (ROOT/'writing').exists() else 4),route
             assert page.locator('.social-links a').count()==4,route
             assert page.locator('.channel-overlay').count()==1,route
             assert page.evaluate('document.documentElement.scrollWidth===innerWidth'),(route,width)
@@ -46,7 +46,7 @@ with sync_playwright() as p:
                 for href in page.locator('a[href]').evaluate_all('(els)=>els.map(e=>e.getAttribute("href"))'):
                     if href.startswith('/'):
                         links.add(urlsplit(href).path)
-                if route in ['/writing/','/about/','/links/','/writing/no-map/']:
+                if route in ['/about/','/links/']:
                     page.screenshot(path=str(OUT/('page-'+route.strip('/').replace('/','-')+'.png')))
             rows.append({'route':route,'width':width,'status':'passed'})
     assert not errors,errors

@@ -157,7 +157,7 @@ function generateOG(title, outputPath) {
 const contentDir = path.join(__dirname, '..', 'content', 'writing');
 const outputDir = path.join(__dirname, '..', 'static', 'og');
 
-const files = fs.readdirSync(contentDir).filter(f => f.endsWith('.md'));
+const files = fs.existsSync(contentDir) ? fs.readdirSync(contentDir).filter(f => f.endsWith('.md')) : [];
 
 for (const file of files) {
   const content = fs.readFileSync(path.join(contentDir, file), 'utf-8');

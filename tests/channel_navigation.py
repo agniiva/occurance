@@ -24,19 +24,15 @@ with sync_playwright() as p:
     assert page.evaluate('window.sawChannelEntry === true'), 'Entry should tolerate canonical trailing-slash redirects'
     page.wait_for_function('!document.documentElement.classList.contains("channel-entering")')
     leaving = page.evaluate('''()=>{
-      document.querySelector('nav a[href="/writing/"]').click();
+      document.querySelector('nav a[href="/links/"]').click();
       return document.documentElement.classList.contains('channel-leaving');
     }''')
     assert leaving, 'Normal navigation should start the TV closing animation'
-    page.wait_for_url(BASE+'/writing/')
+    page.wait_for_url(BASE+'/links/')
     page.wait_for_load_state('domcontentloaded')
     assert page.evaluate('window.sawChannelEntry === true'), 'Next page should open as a new channel'
     page.wait_for_function('!document.documentElement.classList.contains("channel-entering")')
-    assert page.locator('nav a[aria-current="page"]').inner_text() == 'Writing'
-    page.locator('.writing-list a').first.click()
-    page.wait_for_url('**/writing/no-map/')
-    page.wait_for_function('!document.documentElement.classList.contains("channel-entering")')
-    assert page.locator('h1').inner_text() == 'No Map'
+    assert page.locator('nav a[aria-current="page"]').inner_text() == 'Links'
     page.go_back(wait_until='domcontentloaded')
     assert not page.evaluate('document.documentElement.classList.contains("channel-leaving")')
 
@@ -76,9 +72,9 @@ with sync_playwright() as p:
     assert page.locator('#pause-effects').is_checked()
     page.locator('#pause-effects').uncheck()
     page.emulate_media(reduced_motion='reduce')
-    reduced = page.evaluate('''()=>{document.querySelector('nav a[href="/writing/"]').click();return document.documentElement.classList.contains('channel-leaving')}''')
+    reduced = page.evaluate('''()=>{document.querySelector('nav a[href="/about/"]').click();return document.documentElement.classList.contains('channel-leaving')}''')
     assert not reduced
-    page.wait_for_url(BASE+'/writing/')
+    page.wait_for_url(BASE+'/about/')
     assert not errors, errors
 
     nojs = browser.new_context(java_script_enabled=False).new_page()
@@ -88,7 +84,7 @@ with sync_playwright() as p:
     assert nojs.locator('h1').is_visible()
     browser.close()
 
-report={'normal_navigation':'passed','entry_animation':'passed','article_navigation':'passed',
+report={'normal_navigation':'passed','entry_animation':'passed',
         'back_navigation':'passed','keyboard_navigation':'passed','pause_persistence':'passed',
         'reduced_motion':'passed','no_javascript':'passed','exemptions':exemptions,'errors':errors}
 OUT.mkdir(parents=True, exist_ok=True)

@@ -20,8 +20,8 @@ with sync_playwright() as p:
     assert page.locator('#channel-sound').count()==1,'Sound toggle should exist'
     assert page.locator('#channel-sound').get_attribute('aria-pressed')=='true'
     assert page.evaluate('sessionStorage.getItem("test:sound-playing")') is None,'No autoplay'
-    page.locator('nav a[href="/writing/"]').click()
-    page.wait_for_url(BASE+'/writing/')
+    page.locator('nav a[href="/links/"]').click()
+    page.wait_for_url(BASE+'/links/')
     assert page.evaluate('sessionStorage.getItem("test:sound-playing")')=='1','Actual audio playback must start after the click'
     page.wait_for_function('!document.documentElement.classList.contains("channel-entering")')
     page.locator('#channel-sound').click()
